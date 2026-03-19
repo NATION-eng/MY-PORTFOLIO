@@ -1,0 +1,526 @@
+@import "tailwindcss";
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    font-family: "Montserrat", sans-serif, "Poppins";
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.CheifNAv{
+    overflow: scroll;
+}
+nav{
+    position: relative;
+    left:28%;
+    top: 0;
+    z-index: 1000;
+}
+.navthesecond{
+    display: none;
+}
+nav a{
+    position: relative;
+    top:5px;
+}
+
+.navbtns:hover{
+    box-shadow: 0 4px 15px black;
+}
+.firstspac{
+    display: flex;
+    padding: 40px 80px;
+    border-radius: 40px;
+    background-color: rgba(181, 181, 181, 0.085);
+}
+.Aptbtn:hover{
+    background-color: white;
+    color: black;
+    transition: linear .4s;
+    box-shadow: -1px 3px 8px 1px rgba(0, 0, 0, 0.332);
+}
+.firimfmfnspa4 img{
+    position: relative;
+    left: 10px;
+}
+
+.firstspac2{
+    
+    position: relative;
+    left:-60px !important;
+}
+.firstvhaimsn span{
+    font-family: "Anton", sans-serif !important;
+}
+.firstvhaimsn h3{
+    font-family: "Montserrat", sans-serif;
+}
+/* This is for the image horizintal scrolling infininte */
+.babascroll{
+overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  /* left:20%; */
+}
+.imgscrol{
+/* overflow: hidden; */
+    /* display: inline-block; */
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+}
+.imgscrol img{
+    width: 80% !important;
+    margin: 10px;
+    /* vertical-align: middle; */
+}
+.Activebtns{
+    /* top:300px; */
+}
+.kings-ofmin{
+    display: flex;
+}
+.kings-ofmin img{
+    width: 120px;
+    max-height: 160px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.ogapics{
+    transition: .9s ease-in-out;
+    transition-delay: .5s;
+}
+.ogapics:hover{
+    
+    color: white;
+    background-color: rgba(0, 0, 255, 0.515);
+}
+.miningforme{
+    position: relative;
+    left:20px;
+    border: 5px rgb(255, 255, 255) solid;
+    transform: rotate(15.5deg);
+    transition: .8s ease-in-out;
+    transition-delay: .4s;
+}
+.miningforme:hover{
+    border:rgba(0, 0, 0, 0.34) solid 5px;
+}
+.miningforme2{
+    border: 5px rgb(255, 255, 255) solid;
+    transform: rotate(-5.5deg);
+}
+.miningform2:hover{
+    border:rgba(0, 0, 0, 0.34) solid 5px;
+}
+.miningforme4{
+     border: 5px rgb(255, 255, 255) solid;
+    transform: rotate(5.5deg);
+    position: relative;
+    left:-10px;
+    transition: .8s ease-in-out;
+    transition-delay: .4s;
+}
+
+/* This is the style for the section for check out the site */
+.minofmeintg{
+    background-color:rgba(128, 128, 128, 0.054);
+}
+.minviebe{
+    transition: .8s ease-in-out;
+    transition-delay: .4s;
+}
+.minviebe:hover{
+    background-color: rgb(0, 0, 0);
+   color: white;
+    
+}
+
+.miningforme4:hover{
+    border:rgba(0, 0, 0, 0.34) solid 5px;
+}
+/* All these are part of thhe footer */
+.thisimhs{  
+    width: 180px;
+    text-align: center; 
+    
+}
+.beforethemfoots{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+footer{
+    position: relative;
+    left: -10px;
+}
+footer img{
+    max-width:95%;
+    margin: 10px;
+}
+.mifhhrtno{
+    display: none;
+}
+/* This style is for thhe icons in the get in touch section */
+.thenfiigicon{
+    position: relative;
+    top: 22px;
+    left: 15px;
+}
+.footer:hover{
+    animation: spin 1s linear infinite;
+}
+
+@media  (min-width:200px) and (max-width:800px){
+     .CheifNAv{
+    overflow: scroll;
+  }
+     body{
+    z-index: 0;
+  }
+
+    .navthesecond{
+        display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.272);
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.191);
+  margin-bottom: 30px;
+
+  position: sticky;
+  top: 0;
+  background-color: white; /* or your desired background */
+  z-index: 1000; /* ensures it stays on top of other content */   
+      
+    }
+
+
+    .navthesecond .icon{
+        position: relative;
+        top: 2px;
+    }
+    nav{
+        display: none !important;
+    }
+    .mingodrtheb{
+        /* width: ; */
+        /* display: none; */
+    }
+    /* this style is for the paragraph  */
+    .firstvhaimsn{
+        font-size: 30px !important;
+    }
+
+    .firstvhaimsn span{
+        /* color:rgb(216, 153, 18); */
+        font-size:45px !important;
+        font-weight: 900 !important;
+    }
+    /* This style is for the first p tag */
+    .firsdpdppp{
+        width: 90% !important;
+    }
+
+    .middleman{
+        left: 10px;
+    }
+
+    /* This style is for the first p tag  */
+    .firppdonf11{
+        margin: 10px 50px;
+        overflow: hidden;
+    }
+    .firppdonf{
+        margin-top: 20px;
+        width: 100%;
+        left:10px !important;
+    }
+
+    .firppdonf p{
+        width: 90% !important;
+        /* display: none; */
+    }
+    
+    .babeofthemeall{
+        flex-direction: column !important;
+    }
+    /* styling for the sector with the stack logo */
+    .Whythem{
+        display: flex  !important;
+        justify-content: space-around;
+        position: relative;
+        left: -15px !important;
+        margin: 20px 10px;
+    }
+
+    /* This style is for the chrisbank side section */
+    .Whythem22{
+        left:-20px !important;
+    }
+    .flowerighs{
+        
+        max-width: 40% !important;
+    }
+
+    /* this style is for the section below flowerighs */
+    .minofmeintg{
+        flex-direction: column !important;
+        width:80% !important;
+        left: 25px !important;
+    }
+
+    .minofmeintg h3{
+        width: 90%;
+    }
+
+    /* this style is for the div holdign the button below it */
+    .firstudbtn{
+      padding:10px !important;
+      width: 60% !important;
+      overflow: hidden;
+      position: relative;
+      left:60px;
+    }
+
+    .firstudbtn button{
+        top: 0 !important;
+        left: 25px !important;
+    }
+   
+    .babafirspac{
+        /* background-color: gray; */
+        max-width:100% !important;
+        /* margin-right: 0px !important; */
+    }
+
+    /* Styling the images side */
+    .babafirspac33{
+        position:  relative !important;
+        /* left:-4px !important; */
+    }
+    .babafirspac433{
+        left: 0% !important;
+    }
+
+    .ogapics{
+        border-radius: 10px !important;
+        margin:0px !important;
+        position: relative;
+        left: -5px;
+    }
+    /* this style is for the part that talk's about my self the guy behund the pixels */
+    .underthecanopy{
+        flex-direction: column !important;
+    }
+    
+    .parentofthemp{
+        width: 100% !important;
+    }
+    .kings-ofmin{
+        gap:0px !important;
+        /* padding: 10px !important; */
+    }
+    .kings-ofmin img{
+        position: relative;
+        top:8px !important;
+        
+       
+        /* width: 900px !important; */
+    }
+    .bossofiggdfed{
+        height:200px !important;
+        margin:5px 0px !important;
+        overflow: hidden;
+        gap:40px !important;
+    }
+    
+    .miningforme4{
+        display: none;
+    }
+    .miningforme{
+    /* height: 160px; */
+
+        /* width: 900px !important; */
+        margin: 1px 0px !important;
+    }
+    .miningforme2{
+         left:-25px !important;
+         /* width: 900px !important; */
+        margin: 1px 0px !important;
+
+    }
+    .minofmeintg3332 a{
+        padding: auto;
+    }
+    .minofmeintg3332 a button{
+        left: 3px !important;
+    }
+    .subparentofthemp{
+        flex-direction: column !important;
+        
+        width:100% !important;
+    }
+    .sobunder{
+        width: 100% !important;
+    }
+    .underthecanopy p{
+        /* width:100% !important; */
+    }
+    .firstspac{
+        background-color: rgb(255, 255, 255);
+    }
+    .minviebe{
+        margin: 40px 20px !important;
+        border-radius: 10px !important;
+        left:-2px !important;
+        width: 90% !important;
+    }
+    .minofmeintg{
+        top:-60px !important;
+    }
+    .minofmeintg3332{
+       max-width: 80%;
+       left: 40px !important;
+       gap: 40px;
+    }
+   
+    .firimfmfnspa2{
+        border-radius:20px !important;
+        border: 4px solid black !important;
+    }
+    .firimfmfnspa{
+        border-radius:20px !important;
+        border: 4px solid black !important;
+    }
+    .thisimhs{
+        display: none;
+    }
+    .beforethemfoots{
+        display: none;
+    }
+    .mifhhrtnot{
+        /* display: none; */
+    }
+    .buttnsicss{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       position: relative;
+       left:25px;
+    }
+    .mifhhrtno{
+        display: none;
+        gap: 10px;
+       
+        /* display: block; */
+    }
+
+    .thnfminiffi{
+         position: relative;
+        top: 5px;
+    }
+    .Activebtns{
+        gap: 15px;
+        top:-90px;
+    }
+    .Hirebtn{
+        padding: 10px 60px;
+    }
+
+    .Availablebtn{
+        border-radius: 30px;
+        padding: 10px 40px;
+    }
+    .bankSet{
+        grid-template-columns: repeat(1,1fr);
+        left: 10%;
+    }
+    .MinSet1{
+       display: flex;
+       left:-15px;
+    }
+    .MinSet1-sub{
+        position: relative;
+        left: -20px;
+        top:1px;
+        width: 140%;
+        /* padding: 10px 50px; */
+    }
+    .MinSet1 img{
+        max-width: 120%;
+        left: -1px;
+    }
+    .MinSet1-sub{
+        margin: 20px;
+        max-width: 60% !important;
+    }
+    .CheifeBA{
+        overflow: hidden;
+        padding:20px 50px;
+        /* height: 50vh; */
+
+    }
+    .CheifeBA img{
+        position: relative;
+        left: 20px;
+        border-radius:20px ;
+        border: 3px solid black;
+       
+    }
+
+    .DEvriftmain{
+       display: flex;
+       flex-direction: column;
+       left: 40px;
+    }
+    .DEvriftmain-1{
+        grid-template-columns: repeat(2,1fr);
+        left:-10px;
+        margin: 10px 40px;
+
+    }
+    .DEvriftmain-1-sub22{
+        margin: 4px !important;
+        max-width: 65% !important;
+        position: relative;
+        padding: 10px;
+        /* left: -10px !important; */
+    }
+    .mainDEvriftmain-1-sub22{
+        left:1% ;
+        /* max-width: 40%; */
+    }
+    .mainDEvriftmain-1-sub2-1{
+        width: 160%;
+        margin: 30px auto;
+    }
+    .mainDEvriftmain-1-sub22 img{
+        border-radius: 20px;
+    }
+
+}
+@media (min-width:310px) and (max-width:350px){
+    nav{
+        gap: 50px;
+    }
+    .firppdonf{
+       width: 80%;
+       position: relative;
+       left:30px !important;
+       /* height: 50vh; */
+    }
+    .Hirebtn{
+       text-wrap: nowrap; 
+       padding: 10px 20px;
+    }
+    
+}
+@media (min-width:520px) and (max-width:640px){
+    
+}

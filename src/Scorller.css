@@ -1,0 +1,31 @@
+/* .scroll-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-content {
+  display: flex;
+  width: fit-content;
+  animation: scroll 10s linear infinite;
+}
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-container .scroll-content {
+  animation-delay: 0s;
+}
+
+.scroll-container .scroll-content:nth-child(2) {
+  animation-delay: -5s;
+} */
