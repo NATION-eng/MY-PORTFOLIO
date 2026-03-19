@@ -58,10 +58,10 @@ const Contact = () => {
           </div>
 
           <a
-            href="mailto:chiburomanation@gmail.com"
+            href="mailto:chiburomanation6@gmail.com"
             className="contact__email"
           >
-            chiburomanation@gmail.com
+            chiburomanation6@gmail.com
           </a>
         </div>
       </AnimateOnScroll>
