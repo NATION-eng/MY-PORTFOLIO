@@ -42,19 +42,19 @@ export const projects = [
     title: "Solar Estimator",
     description:
       "This a solar estimator that helps you calculate the amount and cost of solar panels for your home.",
-    image1: "/Images/space1.PNG",
-    image2: "/Images/space2.PNG",
+    image1: "/Images/solar 1.jpeg",
+    image2: "/Images/solar 2.jpeg",
     url: "https://solar-estimator-dqw.vercel.app/",
-    tags: ["ReactJs", "CSS"],
+    tags: ["Typescript", "Javascript"],
   },
   {
     title: "Site Pilot",
     description:
       "This is an AI that helps construction generally.",
-    image1: "/Images/space1.PNG",
-    image2: "/Images/space2.PNG",
+    image1: "/Images/site 1.jpeg",
+    image2: "/Images/site 2.jpeg",
     url: "https://site-pilot-phi.vercel.app/",
-    tags: ["ReactJs", "CSS"],
+    tags: ["Javascript", "CSS"],
   },
   // ──────────────────────────────────────────────────────────
   // ➕ ADD NEW PROJECTS BELOW — just copy-paste this template:

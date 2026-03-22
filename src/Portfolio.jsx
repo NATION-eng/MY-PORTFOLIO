@@ -371,12 +371,12 @@ const Portfolio =()=>{
                 <div className="grid grid-cols-2 relative left-[20%] bankSet">
                   <div className="flex gap-[20px] bg-gray-200 p-[10px] w-[80%] rounded-[50px] CheifeBA">
                     <img
-                      src={space1}
+                      src={site1}
                       alt=""
                       className="max-w-[80%] h-[80%]  rounded-[50px] relative top-[105px] left-[40px] border-4 border-black"
                     />
                     <img
-                      src={space2}
+                      src={site2}
                       alt=""
                       className="max-w-[80%] h-[80%] rounded-[50px] relative top-[10px] left-[40px] border-4 border-black"
                     />
@@ -406,9 +406,9 @@ const Portfolio =()=>{
                 <h3 className="relative top-[1px] left-[20px] w-[70%] text-start overflow-hidden">
                   This a solar estimator that helps you calculate the amount and cost of solar panels for your home. x{" "}
                   <span className="bg-gray-300 p-[5px] rounded-[5px]">
-                    ReactJs
+                    Typescript
                   </span>{" "}
-                  <span className="bg-gray-300 p-[5px] rounded-[5px]">CSS</span>{" "}
+                  <span className="bg-gray-300 p-[5px] rounded-[5px]">Javascript</span>{" "}
                 </h3>
                 <a
                   href="https://solar-estimator-dqw.vercel.app/"
@@ -431,12 +431,12 @@ const Portfolio =()=>{
                 <div className="grid grid-cols-2 relative left-[20%] bankSet">
                   <div className="flex gap-[20px] bg-gray-200 p-[10px] w-[80%] rounded-[50px] CheifeBA">
                     <img
-                      src={space1}
+                      src={solar1}
                       alt=""
                       className="max-w-[80%] h-[80%]  rounded-[50px] relative top-[105px] left-[40px] border-4 border-black"
                     />
                     <img
-                      src={space2}
+                      src={solar2}
                       alt=""
                       className="max-w-[80%] h-[80%] rounded-[50px] relative top-[10px] left-[40px] border-4 border-black"
                     />
@@ -466,7 +466,7 @@ const Portfolio =()=>{
                 <h3 className="relative top-[1px] left-[20px] w-[70%] text-start overflow-hidden">
                   This is an AI that helps construction generally.{" "}
                   <span className="bg-gray-300 p-[5px] rounded-[5px]">
-                    ReactJs
+                    Javascript
                   </span>{" "}
                   <span className="bg-gray-300 p-[5px] rounded-[5px]">CSS</span>{" "}
                 </h3>
