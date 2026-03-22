@@ -365,6 +365,126 @@ const Portfolio =()=>{
                 </a>
               </div>
             </div>
+
+            <div>
+              <SlideIn delay={0.8}>
+                <div className="grid grid-cols-2 relative left-[20%] bankSet">
+                  <div className="flex gap-[20px] bg-gray-200 p-[10px] w-[80%] rounded-[50px] CheifeBA">
+                    <img
+                      src={space1}
+                      alt=""
+                      className="max-w-[80%] h-[80%]  rounded-[50px] relative top-[105px] left-[40px] border-4 border-black"
+                    />
+                    <img
+                      src={space2}
+                      alt=""
+                      className="max-w-[80%] h-[80%] rounded-[50px] relative top-[10px] left-[40px] border-4 border-black"
+                    />
+                  </div>
+
+                  <div className="relative left-[-20%] grid grid-cols-1 MinSet1">
+                    <div className="bg-gray-200 inline-grid max-w-[25%] rounded-[20px] m-[40px]">
+                      <img
+                        src={Csslogo}
+                        alt=""
+                        className="relative top-[20px] MinSet1-sub"
+                      />
+                    </div>
+
+                    <div className="bg-gray-200 inline-grid max-w-[25%] rounded-[20px] m-[40px]">
+                      <img
+                        src={Beast}
+                        alt=""
+                        className="relative top-[20px] MinSet1-sub"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SlideIn>
+
+              <div className="minofmeintg minofmeintg3332 flex gap-[160px] max-w-[45%] relative left-[23%] p-5 rounded-[50px] my-[50px]">
+                <h3 className="relative top-[1px] left-[20px] w-[70%] text-start overflow-hidden">
+                  This a solar estimator that helps you calculate the amount and cost of solar panels for your home. x{" "}
+                  <span className="bg-gray-300 p-[5px] rounded-[5px]">
+                    ReactJs
+                  </span>{" "}
+                  <span className="bg-gray-300 p-[5px] rounded-[5px]">CSS</span>{" "}
+                </h3>
+                <a
+                  href="https://solar-estimator-dqw.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white p-[10px] rounded-4xl px-[60px] firstudbtn"
+                >
+                  <button
+                    className="relative top-[35px] left-[-15px]"
+                    style={{ overflow: "hidden", textWrap: "nowrap" }}
+                  >
+                    Check it Out
+                  </button>
+                </a>
+              </div>
+            </div>
+
+          <div>
+              <SlideIn delay={0.8}>
+                <div className="grid grid-cols-2 relative left-[20%] bankSet">
+                  <div className="flex gap-[20px] bg-gray-200 p-[10px] w-[80%] rounded-[50px] CheifeBA">
+                    <img
+                      src={space1}
+                      alt=""
+                      className="max-w-[80%] h-[80%]  rounded-[50px] relative top-[105px] left-[40px] border-4 border-black"
+                    />
+                    <img
+                      src={space2}
+                      alt=""
+                      className="max-w-[80%] h-[80%] rounded-[50px] relative top-[10px] left-[40px] border-4 border-black"
+                    />
+                  </div>
+
+                  <div className="relative left-[-20%] grid grid-cols-1 MinSet1">
+                    <div className="bg-gray-200 inline-grid max-w-[25%] rounded-[20px] m-[40px]">
+                      <img
+                        src={Csslogo}
+                        alt=""
+                        className="relative top-[20px] MinSet1-sub"
+                      />
+                    </div>
+
+                    <div className="bg-gray-200 inline-grid max-w-[25%] rounded-[20px] m-[40px]">
+                      <img
+                        src={Beast}
+                        alt=""
+                        className="relative top-[20px] MinSet1-sub"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SlideIn>
+
+              <div className="minofmeintg minofmeintg3332 flex gap-[160px] max-w-[45%] relative left-[23%] p-5 rounded-[50px] my-[50px]">
+                <h3 className="relative top-[1px] left-[20px] w-[70%] text-start overflow-hidden">
+                  This is an AI that helps construction generally.{" "}
+                  <span className="bg-gray-300 p-[5px] rounded-[5px]">
+                    ReactJs
+                  </span>{" "}
+                  <span className="bg-gray-300 p-[5px] rounded-[5px]">CSS</span>{" "}
+                </h3>
+                <a
+                  href="https://site-pilot-phi.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white p-[10px] rounded-4xl px-[60px] firstudbtn"
+                >
+                  <button
+                    className="relative top-[35px] left-[-15px]"
+                    style={{ overflow: "hidden", textWrap: "nowrap" }}
+                  >
+                    Check it Out
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="mx-[140px] mb-[150px] bg-gray-300 p-[50px] rounded-[30px] ogapics">
