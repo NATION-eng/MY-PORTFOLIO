@@ -11,6 +11,12 @@ import space1 from "../public/Images/space1.PNG"
 import enugu from "../public/Images/enugu.jpeg"
 import bayelsa from "../public/Images/bayelsa.jpeg"
 import me from "../public/Images/me.jpeg"
+import site1 from "../public/Images/site 1.jpeg"
+import site2 from "../public/Images/site 2.jpeg"
+import solar1 from "../public/Images/solar 1.jpeg"
+import solar2 from "../public/Images/solar 2.jpeg"
+import p1 from "../public/Images/p1.jpeg"
+import p2 from "../public/Images/p2.jpeg"
 // import LoadingCircleSpinner from "./LoadingCircleSpinner"
 import ScrollIndicator from "./ScrollIndicator"
 import FadeInSection from "./FadeInSection";
@@ -485,6 +491,66 @@ const Portfolio =()=>{
                 </a>
               </div>
             </div>
+
+          <div>
+              <SlideIn delay={0.8}>
+                <div className="grid grid-cols-2 relative left-[20%] bankSet">
+                  <div className="flex gap-[20px] bg-gray-200 p-[10px] w-[80%] rounded-[50px] CheifeBA">
+                    <img
+                      src={p1}
+                      alt=""
+                      className="max-w-[80%] h-[80%]  rounded-[50px] relative top-[105px] left-[40px] border-4 border-black"
+                    />
+                    <img
+                      src={p2}
+                      alt=""
+                      className="max-w-[80%] h-[80%] rounded-[50px] relative top-[10px] left-[40px] border-4 border-black"
+                    />
+                  </div>
+
+                  <div className="relative left-[-20%] grid grid-cols-1 MinSet1">
+                    <div className="bg-gray-200 inline-grid max-w-[25%] rounded-[20px] m-[40px]">
+                      <img
+                        src={Csslogo}
+                        alt=""
+                        className="relative top-[20px] MinSet1-sub"
+                      />
+                    </div>
+
+                    <div className="bg-gray-200 inline-grid max-w-[25%] rounded-[20px] m-[40px]">
+                      <img
+                        src={Beast}
+                        alt=""
+                        className="relative top-[20px] MinSet1-sub"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SlideIn>
+
+              <div className="minofmeintg minofmeintg3332 flex gap-[160px] max-w-[45%] relative left-[23%] p-5 rounded-[50px] my-[50px]">
+                <h3 className="relative top-[1px] left-[20px] w-[70%] text-start overflow-hidden">
+                  This is a tourist website.{" "}
+                  <span className="bg-gray-300 p-[5px] rounded-[5px]">
+                    Javascript
+                  </span>{" "}
+                  <span className="bg-gray-300 p-[5px] rounded-[5px]">CSS</span>{" "}
+                </h3>
+                <a
+                  href="https://tourist-guide-zeta-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white p-[10px] rounded-4xl px-[60px] firstudbtn"
+                >
+                  <button
+                    className="relative top-[35px] left-[-15px]"
+                    style={{ overflow: "hidden", textWrap: "nowrap" }}
+                  >
+                    Check it Out
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="mx-[140px] mb-[150px] bg-gray-300 p-[50px] rounded-[30px] ogapics">
@@ -533,7 +599,7 @@ const Portfolio =()=>{
             <div>
               <div className="flex  gap-[40px] subparentofthemp ">
                 <p className="w-[60%] sobunder">
-                  Creativity has always been my escape -first through drawing,
+                  Creativity has always been my escape first through drawing,
                   now through designe and developement. I find joy through
                   discovering hidden food ,spots and mobile gaming
                 </p>

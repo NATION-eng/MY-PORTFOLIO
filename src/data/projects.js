@@ -1,13 +1,13 @@
 // ============================================================
-// PROJECTS DATA — Add new projects by copying an object below
+// PROJECTS DATA - Add new projects by copying an object below
 // ============================================================
 // Each project needs:
-//   title       — Project name
-//   description — 1-2 sentence description
-//   image1      — Primary screenshot path (from /public/Images/)
-//   image2      — Secondary screenshot path
-//   url         — Live site URL
-//   tags        — Array of tech used
+//   title       - Project name
+//   description - 1-2 sentence description
+//   image1      - Primary screenshot path (from /public/Images/)
+//   image2      - Secondary screenshot path
+//   url         - Live site URL
+//   tags        - Array of tech used
 // ============================================================
 
 export const projects = [
@@ -41,24 +41,33 @@ export const projects = [
   {
     title: "Solar Estimator",
     description:
-      "This a solar estimator that helps you calculate the amount and cost of solar panels for your home.",
+      "A solar estimator that helps users calculate the quantity and cost of solar panels for their homes.",
     image1: "/Images/solar 1.jpeg",
     image2: "/Images/solar 2.jpeg",
     url: "https://solar-estimator-dqw.vercel.app/",
-    tags: ["Typescript", "Javascript"],
+    tags: ["TypeScript", "JavaScript"],
   },
   {
     title: "Site Pilot",
     description:
-      "This is an AI that helps construction generally.",
+      "An AI-powered construction support tool focused on making planning and project assistance more accessible.",
     image1: "/Images/site 1.jpeg",
     image2: "/Images/site 2.jpeg",
     url: "https://site-pilot-phi.vercel.app/",
-    tags: ["Javascript", "CSS"],
+    tags: ["JavaScript", "CSS"],
   },
-  // ──────────────────────────────────────────────────────────
-  // ➕ ADD NEW PROJECTS BELOW — just copy-paste this template:
-  // ──────────────────────────────────────────────────────────
+  {
+    title: "Tourist Guide",
+    description:
+      "A tourism website that helps users explore destinations and discover travel experiences through a clean, engaging interface.",
+    image1: "/Images/p1.jpeg",
+    image2: "/Images/p2.jpeg",
+    url: "https://tourist-guide-zeta-five.vercel.app/",
+    tags: ["JavaScript", "CSS"],
+  },
+  // ============================================================
+  // ADD NEW PROJECTS BELOW - just copy-paste this template:
+  // ============================================================
   // {
   //   title: "Project Name",
   //   description: "What it does and why it matters.",
