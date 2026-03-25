@@ -65,6 +65,15 @@ export const projects = [
     url: "https://tourist-guide-zeta-five.vercel.app/",
     tags: ["JavaScript", "CSS"],
   },
+  {
+    title: "Cad Cutz",
+    description:
+      "A modern business website for a grooming brand, designed to showcase services and give visitors a clean, confident first impression.",
+    image1: "/Images/B1.jpeg",
+    image2: "/Images/B2.jpeg",
+    url: "https://cad-cutz-ice.vercel.app/",
+    tags: ["JavaScript", "CSS"],
+  },
   // ============================================================
   // ADD NEW PROJECTS BELOW - just copy-paste this template:
   // ============================================================
