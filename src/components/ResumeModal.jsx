@@ -12,16 +12,20 @@ const ResumeModal = ({ isOpen, onClose }) => {
   const [viewMode, setViewMode] = useState('executive'); // 'executive' | 'ats'
 
   useEffect(() => {
+    if (!isOpen) return;
+
+    // Defer overflow lock to next frame so the click interaction paints immediately (<16ms INP)
+    const rafId = requestAnimationFrame(() => {
+      document.body.style.overflow = 'hidden';
+    });
+
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
     };
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-      window.addEventListener('keydown', handleKeyDown);
-    } else {
-      document.body.style.overflow = '';
-    }
+    window.addEventListener('keydown', handleKeyDown);
+
     return () => {
+      cancelAnimationFrame(rafId);
       document.body.style.overflow = '';
       window.removeEventListener('keydown', handleKeyDown);
     };
