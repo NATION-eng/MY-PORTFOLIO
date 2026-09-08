@@ -12,7 +12,7 @@ const socials = [
   {
     icon: faWhatsapp,
     label: "WhatsApp",
-    url: "https://wa.me/2348161237136",
+    url: "https://wa.me/2348116079309",
   },
   {
     icon: faLinkedin,

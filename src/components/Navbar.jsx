@@ -177,7 +177,7 @@ const Navbar = () => {
                   <span>Call 08161237136</span>
                 </a>
                 <a
-                  href="https://wa.me/2348161237136"
+                  href="https://wa.me/2348116079309"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mobile-drawer__wa-btn"

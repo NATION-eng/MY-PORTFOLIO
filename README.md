@@ -13,7 +13,7 @@
 ## 🚀 Live Demo
 - **Portfolio URL:** [https://nationchiburoma.dev](https://nationchiburoma.dev)
 - **Direct Phone:** [+234 816 123 7136](tel:+2348161237136)
-- **WhatsApp:** [Chat on WhatsApp](https://wa.me/2348161237136)
+- **WhatsApp:** [Chat on WhatsApp](https://wa.me/2348116079309)
 - **LinkedIn:** [Chiburoma Nation](https://www.linkedin.com/in/chiburoma-nation-752395312)
 
 ---
