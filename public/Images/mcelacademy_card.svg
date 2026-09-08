@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+    <defs>
+      <linearGradient id="acadBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0B0E23"/>
+        <stop offset="60%" stop-color="#181842"/>
+        <stop offset="100%" stop-color="#080918"/>
+      </linearGradient>
+      <linearGradient id="acadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#6366F1"/>
+        <stop offset="100%" stop-color="#A855F7"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" rx="16" fill="url(#acadBg)"/>
+    <circle cx="200" cy="150" r="160" fill="#6366F1" opacity="0.25"/>
+    <circle cx="620" cy="340" r="180" fill="#38BDF8" opacity="0.2"/>
+    <rect x="30" y="25" width="740" height="40" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="55" cy="45" r="5" fill="#EF4444"/>
+    <circle cx="72" cy="45" r="5" fill="#F59E0B"/>
+    <circle cx="89" cy="45" r="5" fill="#10B981"/>
+    <rect x="180" y="33" width="380" height="24" rx="12" fill="rgba(0,0,0,0.4)"/>
+    <text x="370" y="49" fill="#C7D2FE" font-family="sans-serif" font-size="12" font-weight="500" text-anchor="middle">https://m-cel-tech-academy.vercel.app</text>
+    <g transform="translate(50, 95)">
+      <rect x="0" y="0" width="180" height="28" rx="14" fill="rgba(99,102,241,0.2)" stroke="#818CF8" stroke-width="1"/>
+      <text x="90" y="18" fill="#A5B4FC" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">EDTECH &amp; TALENT ENGINE</text>
+      <text x="0" y="70" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="800">M-CEL TECH ACADEMY</text>
+      <text x="0" y="110" fill="url(#acadGrad)" font-family="sans-serif" font-size="36" font-weight="900">JOB-READY TECH PROFESSIONALS</text>
+      <text x="0" y="145" fill="#94A3B8" font-family="sans-serif" font-size="14">Interactive curriculum tracks · Certificate verification system · PWA enabled</text>
+      <g transform="translate(0, 180)">
+        <rect x="0" y="0" width="215" height="120" rx="12" fill="rgba(15,23,42,0.8)" stroke="rgba(99,102,241,0.3)"/>
+        <text x="20" y="35" fill="#818CF8" font-family="sans-serif" font-size="12" font-weight="700">PROGRAMS</text>
+        <text x="20" y="72" fill="#C084FC" font-family="sans-serif" font-size="28" font-weight="800">5 Tracks</text>
+        <text x="20" y="98" fill="#E2E8F0" font-family="sans-serif" font-size="12">AI, Coding &amp; Automation</text>
+        <rect x="240" y="0" width="215" height="120" rx="12" fill="rgba(15,23,42,0.8)" stroke="rgba(99,102,241,0.3)"/>
+        <text x="260" y="35" fill="#818CF8" font-family="sans-serif" font-size="12" font-weight="700">VERIFICATION</text>
+        <text x="260" y="72" fill="#38BDF8" font-family="sans-serif" font-size="28" font-weight="800">Digital ID</text>
+        <text x="260" y="98" fill="#E2E8F0" font-family="sans-serif" font-size="12">Instant Credential Check</text>
+        <rect x="480" y="0" width="220" height="120" rx="12" fill="rgba(15,23,42,0.8)" stroke="rgba(99,102,241,0.3)"/>
+        <text x="500" y="35" fill="#818CF8" font-family="sans-serif" font-size="12" font-weight="700">PLATFORM</text>
+        <text x="500" y="72" fill="#34D399" font-family="sans-serif" font-size="28" font-weight="800">PWA Ready</text>
+        <text x="500" y="98" fill="#E2E8F0" font-family="sans-serif" font-size="12">Offline Mobile Access</text>
+      </g>
+      <rect x="0" y="325" width="700" height="35" rx="8" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.25)"/>
+      <circle cx="25" cy="342" r="4" fill="#10B981"/>
+      <text x="40" y="346" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="600">Full Student Lifecycle: Registration, Cohort Scheduling, Verification Engine</text>
+    </g>
+  </svg>

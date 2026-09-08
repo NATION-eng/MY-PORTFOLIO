@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faTwitter,
@@ -8,6 +9,11 @@ import {
 import AnimateOnScroll from "../components/AnimateOnScroll";
 
 const socials = [
+  {
+    icon: faWhatsapp,
+    label: "WhatsApp",
+    url: "https://wa.me/2348161237136",
+  },
   {
     icon: faLinkedin,
     label: "LinkedIn",
@@ -23,11 +29,6 @@ const socials = [
     label: "Instagram",
     url: "https://www.instagram.com/chiburomanation",
   },
-  {
-    icon: faWhatsapp,
-    label: "WhatsApp",
-    url: "https://wa.me/2348116079309",
-  },
 ];
 
 const Contact = () => {
@@ -38,8 +39,19 @@ const Contact = () => {
           <p className="contact__label">Let's connect</p>
           <h2 className="contact__title">Get In Touch</h2>
           <p className="contact__subtitle">
-            Have a project in mind or want to collaborate? I'd love to hear from you.
+            Have a project in mind, an engineering role, or want to collaborate? I'd love to hear from you.
           </p>
+
+          <div className="contact__actions">
+            <a
+              href="tel:+2348161237136"
+              className="contact__call-btn"
+              aria-label="Call 08161237136"
+            >
+              <FontAwesomeIcon icon={faPhone} />
+              <span>Direct Line: +234 816 123 7136</span>
+            </a>
+          </div>
 
           <div className="contact__socials">
             {socials.map((social) => (

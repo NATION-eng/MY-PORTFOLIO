@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+    <defs>
+      <linearGradient id="apexBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0C111D"/>
+        <stop offset="60%" stop-color="#182230"/>
+        <stop offset="100%" stop-color="#080C14"/>
+      </linearGradient>
+      <linearGradient id="apexAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#F59E0B"/>
+        <stop offset="100%" stop-color="#F97316"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" rx="16" fill="url(#apexBg)"/>
+    <circle cx="200" cy="150" r="160" fill="#F59E0B" opacity="0.2"/>
+    <circle cx="620" cy="340" r="180" fill="#38BDF8" opacity="0.18"/>
+    <rect x="30" y="25" width="740" height="40" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="55" cy="45" r="5" fill="#EF4444"/>
+    <circle cx="72" cy="45" r="5" fill="#F59E0B"/>
+    <circle cx="89" cy="45" r="5" fill="#10B981"/>
+    <rect x="180" y="33" width="380" height="24" rx="12" fill="rgba(0,0,0,0.4)"/>
+    <text x="370" y="49" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="500" text-anchor="middle">https://apexbuild-engineerin-ubwg.bolt.host</text>
+    <g transform="translate(50, 95)">
+      <rect x="0" y="0" width="215" height="28" rx="14" fill="rgba(245,158,11,0.2)" stroke="#F59E0B" stroke-width="1"/>
+      <text x="107" y="18" fill="#FDE68A" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">CIVIL &amp; STRUCTURAL ENGINEERING</text>
+      <text x="0" y="70" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="800">ApexBuild Engineering</text>
+      <text x="0" y="110" fill="url(#apexAmber)" font-family="sans-serif" font-size="36" font-weight="900">PRECISION INFRASTRUCTURE</text>
+      <text x="0" y="145" fill="#94A3B8" font-family="sans-serif" font-size="14">Commercial Construction · Structural Design · Project Tender Management</text>
+      <g transform="translate(0, 180)">
+        <rect x="0" y="0" width="215" height="120" rx="12" fill="rgba(15,23,42,0.85)" stroke="rgba(245,158,11,0.25)"/>
+        <text x="20" y="35" fill="#F59E0B" font-family="sans-serif" font-size="12" font-weight="700">EXECUTION</text>
+        <text x="20" y="72" fill="#FCD34D" font-family="sans-serif" font-size="28" font-weight="800">ISO 9001</text>
+        <text x="20" y="98" fill="#E2E8F0" font-family="sans-serif" font-size="12">Certified Safety Standards</text>
+        <rect x="240" y="0" width="215" height="120" rx="12" fill="rgba(15,23,42,0.85)" stroke="rgba(245,158,11,0.25)"/>
+        <text x="260" y="35" fill="#F59E0B" font-family="sans-serif" font-size="12" font-weight="700">STACK</text>
+        <text x="260" y="72" fill="#38BDF8" font-family="sans-serif" font-size="28" font-weight="800">React + TS</text>
+        <text x="260" y="98" fill="#E2E8F0" font-family="sans-serif" font-size="12">TypeScript Strict Mode</text>
+        <rect x="480" y="0" width="220" height="120" rx="12" fill="rgba(15,23,42,0.85)" stroke="rgba(245,158,11,0.25)"/>
+        <text x="500" y="35" fill="#F59E0B" font-family="sans-serif" font-size="12" font-weight="700">TENDERS</text>
+        <text x="500" y="72" fill="#34D399" font-family="sans-serif" font-size="28" font-weight="800">Commercial</text>
+        <text x="500" y="98" fill="#E2E8F0" font-family="sans-serif" font-size="12">Client Consultation Portal</text>
+      </g>
+      <rect x="0" y="325" width="700" height="35" rx="8" fill="rgba(245,158,11,0.12)" stroke="rgba(245,158,11,0.25)"/>
+      <circle cx="25" cy="342" r="4" fill="#10B981"/>
+      <text x="40" y="346" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="600">Built for enterprise tenders, government contracting, and heavy civil projects</text>
+    </g>
+  </svg>

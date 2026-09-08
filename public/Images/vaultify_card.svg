@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+    <defs>
+      <linearGradient id="vaultBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F0C20"/>
+        <stop offset="60%" stop-color="#1E1B4B"/>
+        <stop offset="100%" stop-color="#090714"/>
+      </linearGradient>
+      <linearGradient id="vaultGold" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#818CF8"/>
+        <stop offset="50%" stop-color="#C084FC"/>
+        <stop offset="100%" stop-color="#F43F5E"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" rx="16" fill="url(#vaultBg)"/>
+    <circle cx="200" cy="150" r="160" fill="#4F46E5" opacity="0.25"/>
+    <circle cx="620" cy="340" r="180" fill="#EC4899" opacity="0.2"/>
+    <rect x="30" y="25" width="740" height="40" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="55" cy="45" r="5" fill="#EF4444"/>
+    <circle cx="72" cy="45" r="5" fill="#F59E0B"/>
+    <circle cx="89" cy="45" r="5" fill="#10B981"/>
+    <rect x="180" y="33" width="380" height="24" rx="12" fill="rgba(0,0,0,0.4)"/>
+    <text x="370" y="49" fill="#A5B4FC" font-family="sans-serif" font-size="12" font-weight="500" text-anchor="middle">https://vaultify-rho.vercel.app</text>
+    <g transform="translate(50, 95)">
+      <rect x="0" y="0" width="185" height="28" rx="14" fill="rgba(99,102,241,0.2)" stroke="#818CF8" stroke-width="1"/>
+      <text x="92" y="18" fill="#C7D2FE" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">FINTECH WEALTH PLATFORM</text>
+      <text x="0" y="70" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="800">Save Smarter. Invest Boldly.</text>
+      <text x="0" y="110" fill="url(#vaultGold)" font-family="sans-serif" font-size="36" font-weight="900">BUILD WEALTH WITH PRECISION</text>
+      <text x="0" y="145" fill="#A5B4FC" font-family="sans-serif" font-size="14">Automated savings · Target lockboxes · Vetted high-yield portfolios</text>
+      <g transform="translate(0, 180)">
+        <rect x="0" y="0" width="215" height="120" rx="12" fill="rgba(30,27,75,0.7)" stroke="rgba(165,180,252,0.25)"/>
+        <text x="20" y="35" fill="#818CF8" font-family="sans-serif" font-size="12" font-weight="700">PORTFOLIO YIELD</text>
+        <text x="20" y="72" fill="#34D399" font-family="sans-serif" font-size="28" font-weight="800">Up to 16%</text>
+        <text x="20" y="98" fill="#E0E7FF" font-family="sans-serif" font-size="12">Annual Fixed Returns</text>
+        <rect x="240" y="0" width="215" height="120" rx="12" fill="rgba(30,27,75,0.7)" stroke="rgba(165,180,252,0.25)"/>
+        <text x="260" y="35" fill="#818CF8" font-family="sans-serif" font-size="12" font-weight="700">AUTOMATION</text>
+        <text x="260" y="72" fill="#F472B6" font-family="sans-serif" font-size="28" font-weight="800">Auto-Save</text>
+        <text x="260" y="98" fill="#E0E7FF" font-family="sans-serif" font-size="12">Smart Periodic Triggers</text>
+        <rect x="480" y="0" width="220" height="120" rx="12" fill="rgba(30,27,75,0.7)" stroke="rgba(165,180,252,0.25)"/>
+        <text x="500" y="35" fill="#818CF8" font-family="sans-serif" font-size="12" font-weight="700">SECURITY</text>
+        <text x="500" y="72" fill="#67E8F9" font-family="sans-serif" font-size="28" font-weight="800">Bank-Grade</text>
+        <text x="500" y="98" fill="#E0E7FF" font-family="sans-serif" font-size="12">Multi-Factor Lockboxes</text>
+      </g>
+      <rect x="0" y="325" width="700" height="35" rx="8" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)"/>
+      <circle cx="25" cy="342" r="4" fill="#10B981"/>
+      <text x="40" y="346" fill="#E0E7FF" font-family="sans-serif" font-size="12" font-weight="600">Modern Fintech Architecture · Zero Latency UI · Comprehensive Financial Flow</text>
+    </g>
+  </svg>

@@ -3,22 +3,28 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const ProjectCard = ({ project, index }) => {
   const isReversed = index % 2 !== 0;
 
+  const hasMultipleImages = Boolean(project.image1 && project.image2);
+
   return (
     <AnimateOnScroll variant="fade" delay={0.15}>
       <article className={`project-card ${isReversed ? "project-card--reversed" : ""}`}>
-        <div className="project-card__images">
-          <img
-            src={project.image1}
-            alt={`${project.title} screenshot 1`}
-            loading="lazy"
-            className="project-card__img"
-          />
-          <img
-            src={project.image2}
-            alt={`${project.title} screenshot 2`}
-            loading="lazy"
-            className="project-card__img"
-          />
+        <div className={`project-card__images ${!hasMultipleImages ? "project-card__images--single" : ""}`}>
+          {project.image1 && (
+            <img
+              src={project.image1}
+              alt={`${project.title} preview 1`}
+              loading="lazy"
+              className="project-card__img"
+            />
+          )}
+          {project.image2 && (
+            <img
+              src={project.image2}
+              alt={`${project.title} preview 2`}
+              loading="lazy"
+              className="project-card__img"
+            />
+          )}
         </div>
 
         <div className="project-card__content">

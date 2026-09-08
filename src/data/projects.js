@@ -12,18 +12,73 @@
 
 export const projects = [
   {
-    title: "ChrisBank",
+    title: "M-CEL TECH",
     description:
-      "A fintech landing page featuring a modern UI with an admin dashboard and user portal. Clean typography and conversion-focused design.",
-    image1: "/Images/chrisban1.PNG",
-    image2: "/Images/chrisban2.PNG",
-    url: "https://chrisbank.vercel.app",
-    tags: ["HTML", "CSS"],
+      "Enterprise IT solutions, custom software engineering, and infrastructure platform built for organizational resilience, cybersecurity, and intelligent cloud automation.",
+    image1: "/Images/mceltech_card.svg",
+    url: "https://mceltech.com/",
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Enterprise IT"],
+  },
+  {
+    title: "Vaultify",
+    description:
+      "An all-in-one digital wealth and savings engine allowing users to automate recurring deposits, lock funds for milestones, and invest in vetted portfolios with up to 16% p.a.",
+    image1: "/Images/vaultify_card.svg",
+    url: "https://vaultify-rho.vercel.app/",
+    tags: ["React", "Tailwind CSS", "Fintech UI", "Vite", "JavaScript"],
+  },
+  {
+    title: "M-CEL Tech Academy",
+    description:
+      "Modern EdTech learning academy featuring practical tech bootcamps, student cohort onboarding, digital certificate verification, and progressive web app (PWA) offline support.",
+    image1: "/Images/mcelacademy_card.svg",
+    url: "https://m-cel-tech-academy.vercel.app/",
+    tags: ["React", "PWA", "Tailwind CSS", "Vite", "EdTech"],
+  },
+  {
+    title: "VOLT Energy",
+    description:
+      "High-octane product landing experience featuring cyber-aesthetic typography (Orbitron), high-frequency micro-interactions, and conversion-optimized visual storytelling.",
+    image1: "/Images/volt_card.svg",
+    url: "https://voltenergy-nine.vercel.app/",
+    tags: ["React", "Framer Motion", "Tailwind CSS", "Interactive UI"],
+  },
+  {
+    title: "GreenHarvest Agro",
+    description:
+      "Agritech platform dedicated to modern agriculture, sustainable food security, responsible farming practices, and end-to-end agribusiness supply chains.",
+    image1: "/Images/greenharvest1.jpeg",
+    url: "https://greenharvest-agro.vercel.app/",
+    tags: ["React", "Tailwind CSS", "Vite", "AgriTech", "Modern UI"],
+  },
+  {
+    title: "ApexBuild Engineering",
+    description:
+      "Corporate structural engineering and commercial construction firm portal highlighting project tenders, architectural capability, and ISO-standard safety protocols.",
+    image1: "/Images/apexbuild_card.svg",
+    url: "https://apexbuild-engineerin-ubwg.bolt.host",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Civil Engineering"],
+  },
+  {
+    title: "Savor & Spice Bistro",
+    description:
+      "Contemporary dining portal blending African culinary heritage with fine-casual presentation, real-time table reservations, craft mixology, and dynamic digital menus.",
+    image1: "/Images/savor_card.svg",
+    url: "https://savor-and-spice-bist-xga0.bolt.host/",
+    tags: ["React", "Tailwind CSS", "Vite", "Hospitality Tech"],
+  },
+  {
+    title: "Connected in Praise 2026",
+    description:
+      "Multi-day annual praise concert and evangelism event portal featuring schedule coordination, guest choir spotlights, and attendee registration pipelines.",
+    image1: "/Images/connected_card.svg",
+    url: "https://connected-in-praise-mipz.bolt.host/",
+    tags: ["React", "Tailwind CSS", "Event Platform", "Vite"],
   },
   {
     title: "DevRift",
     description:
-      "Co-founded a web development agency. Built the company's flagship site with fluid animations, responsive layouts, and a sharp brand identity.",
+      "Flagship site for a web development agency featuring fluid animations, responsive layouts, client showcases, and modern brand design.",
     image1: "/Images/devrift1.PNG",
     image2: "/Images/devrift2.PNG",
     url: "https://devrift-interprise.vercel.app",
@@ -36,16 +91,16 @@ export const projects = [
     image1: "/Images/space1.PNG",
     image2: "/Images/space2.PNG",
     url: "https://wealthspace-properties.vercel.app",
-    tags: ["React", "CSS"],
+    tags: ["React", "CSS", "Real Estate"],
   },
   {
     title: "Solar Estimator",
     description:
-      "A solar estimator that helps users calculate the quantity and cost of solar panels for their homes.",
+      "Interactive calculation engine helping homeowners and businesses estimate rooftop solar capacity, energy output, and installation cost models.",
     image1: "/Images/solar 1.jpeg",
     image2: "/Images/solar 2.jpeg",
     url: "https://solar-estimator-dqw.vercel.app/",
-    tags: ["TypeScript", "JavaScript"],
+    tags: ["TypeScript", "JavaScript", "Clean Energy"],
   },
   {
     title: "Site Pilot",
@@ -54,7 +109,16 @@ export const projects = [
     image1: "/Images/site 1.jpeg",
     image2: "/Images/site 2.jpeg",
     url: "https://site-pilot-phi.vercel.app/",
-    tags: ["JavaScript", "CSS"],
+    tags: ["JavaScript", "CSS", "AI Tooling"],
+  },
+  {
+    title: "ChrisBank",
+    description:
+      "A fintech landing page featuring a modern UI with an admin dashboard and user portal. Clean typography and conversion-focused design.",
+    image1: "/Images/chrisban1.PNG",
+    image2: "/Images/chrisban2.PNG",
+    url: "https://chrisbank.vercel.app",
+    tags: ["HTML", "CSS", "Fintech Concept"],
   },
   {
     title: "Tourist Guide",
@@ -63,7 +127,7 @@ export const projects = [
     image1: "/Images/p1.jpeg",
     image2: "/Images/p2.jpeg",
     url: "https://tourist-guide-zeta-five.vercel.app/",
-    tags: ["JavaScript", "CSS"],
+    tags: ["JavaScript", "CSS", "Tourism"],
   },
   {
     title: "Cad Cutz",
@@ -72,17 +136,6 @@ export const projects = [
     image1: "/Images/B1.jpeg",
     image2: "/Images/B2.jpeg",
     url: "https://cad-cutz-ice.vercel.app/",
-    tags: ["JavaScript", "CSS"],
+    tags: ["JavaScript", "CSS", "Lifestyle"],
   },
-  // ============================================================
-  // ADD NEW PROJECTS BELOW - just copy-paste this template:
-  // ============================================================
-  // {
-  //   title: "Project Name",
-  //   description: "What it does and why it matters.",
-  //   image1: "/Images/your-screenshot-1.png",
-  //   image2: "/Images/your-screenshot-2.png",
-  //   url: "https://your-project.vercel.app",
-  //   tags: ["React", "Tailwind", "Node.js"],
-  // },
 ];
