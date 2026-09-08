@@ -1,3 +1,4 @@
+import React from "react";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 
 const Hero = ({ onOpenResume }) => {
@@ -78,4 +79,4 @@ const Hero = ({ onOpenResume }) => {
   );
 };
 
-export default Hero;
+export default React.memo(Hero);

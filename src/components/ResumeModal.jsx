@@ -261,7 +261,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
                   <div className="resume-timeline-header">
                     <div>
                       <h3 className="resume-timeline-role">Lead Full-Stack Engineer &amp; AI Solutions Architect</h3>
-                      <p className="resume-timeline-company">M-CEL TECH &bull; Lagos, Nigeria</p>
+                      <p className="resume-timeline-company">M-CEL TECH &bull; Port Harcourt, Nigeria</p>
                     </div>
                     <span className="resume-timeline-badge">2023 &ndash; Present</span>
                   </div>
@@ -329,9 +329,9 @@ const ResumeModal = ({ isOpen, onClose }) => {
                   <div className="resume-timeline-header">
                     <div>
                       <h3 className="resume-timeline-role">Software Engineering Instructor &amp; Technical Mentor</h3>
-                      <p className="resume-timeline-company">M-CEL Tech Academy &bull; Lagos, Nigeria</p>
+                      <p className="resume-timeline-company">M-CEL Tech Academy &bull; Port Harcourt, Nigeria</p>
                     </div>
-                    <span className="resume-timeline-badge">2022 &ndash; 2024</span>
+                    <span className="resume-timeline-badge">2023 &ndash; Present</span>
                   </div>
                   <ul className="resume-timeline-bullets">
                     <li>
