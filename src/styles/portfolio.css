@@ -1467,3 +1467,402 @@
     padding: 8px;
   }
 }
+
+/* ============================================================
+   RESUME MODAL & ATS DOCUMENT VIEWER
+   ============================================================ */
+.resume-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(3, 7, 18, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Floating Toolbar */
+.resume-toolbar {
+  position: sticky;
+  top: 12px;
+  z-index: 100;
+  width: 100%;
+  max-width: 860px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 10px 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+}
+
+.resume-toolbar__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #10b981;
+}
+
+.resume-toolbar__badge .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: resumePulse 1.8s infinite;
+}
+
+@keyframes resumePulse {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.resume-toolbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resume-toolbar__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 8px 14px;
+}
+
+.resume-toolbar__btn--primary {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+}
+
+.resume-toolbar__btn--primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.resume-toolbar__btn--close {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 10px;
+  font-size: 16px;
+}
+
+.resume-toolbar__btn--close:hover {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+/* Paper Document */
+.resume-paper {
+  width: 100%;
+  max-width: 860px;
+  background: #ffffff;
+  color: #1f2937;
+  border-radius: 12px;
+  padding: 48px 52px;
+  margin-bottom: 40px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+/* Document Header */
+.resume-doc__header {
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.resume-doc__name {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.resume-doc__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2563eb;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.01em;
+}
+
+.resume-doc__summary {
+  font-size: 13.5px;
+  color: #374151;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.resume-doc__contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding-top: 10px;
+  border-top: 1px dashed #e5e7eb;
+}
+
+.resume-doc__contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.resume-doc__contact-item:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Document Sections */
+.resume-doc__section {
+  margin-bottom: 24px;
+}
+
+.resume-doc__heading {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0f172a;
+  border-bottom: 1.5px solid #cbd5e1;
+  padding-bottom: 5px;
+  margin: 0 0 14px 0;
+}
+
+/* Skills Grid */
+.resume-doc__skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resume-doc__skill-category {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.resume-doc__skill-category strong {
+  color: #0f172a;
+  margin-right: 6px;
+}
+
+/* Experience Jobs */
+.resume-doc__job {
+  margin-bottom: 18px;
+}
+
+.resume-doc__job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.resume-doc__job-role {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.resume-doc__job-company {
+  font-size: 13px;
+  font-weight: 500;
+  color: #4b5563;
+  display: block;
+  margin-top: 1px;
+}
+
+.resume-doc__job-date {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #2563eb;
+  white-space: nowrap;
+}
+
+.resume-doc__job-bullets {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.55;
+}
+
+.resume-doc__job-bullets li {
+  margin-bottom: 5px;
+}
+
+/* Projects Grid */
+.resume-doc__projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.resume-doc__project-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.resume-doc__project-title {
+  font-size: 13.5px;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.resume-doc__project-desc {
+  font-size: 12.5px;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Education Row */
+.resume-doc__edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #334155;
+}
+
+.resume-doc__edu-status {
+  font-size: 12px;
+  font-weight: 600;
+  color: #10b981;
+  background: #ecfdf5;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  border: 1px solid #a7f3d0;
+}
+
+/* Responsive Modal Adjustments */
+@media (max-width: 768px) {
+  .resume-paper {
+    padding: 26px 20px;
+    margin-bottom: 70px;
+  }
+
+  .resume-doc__name {
+    font-size: 22px;
+  }
+
+  .resume-doc__title {
+    font-size: 14px;
+  }
+
+  .resume-doc__projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-doc__job-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-doc__contact-list {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+/* ============================================================
+   PRINT STYLES (Save to PDF / Physical Print)
+   ============================================================ */
+@media print {
+  @page {
+    margin: 12mm 15mm;
+    size: A4 portrait;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Hide entire portfolio except the resume paper */
+  .navbar,
+  .mobile-dock,
+  .mobile-drawer,
+  .mobile-drawer-backdrop,
+  main,
+  footer,
+  .resume-toolbar {
+    display: none !important;
+  }
+
+  .resume-backdrop {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    backdrop-filter: none !important;
+  }
+
+  .resume-paper {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    max-width: 100% !important;
+    color: #111111 !important;
+  }
+
+  .resume-doc__name {
+    color: #000000 !important;
+  }
+
+  .resume-doc__title {
+    color: #1d4ed8 !important;
+  }
+
+  .resume-doc__heading {
+    border-bottom: 1.5px solid #666666 !important;
+    color: #000000 !important;
+  }
+
+  .resume-doc__project-item {
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important;
+  }
+
+  .resume-doc__contact-item {
+    color: #222222 !important;
+  }
+}

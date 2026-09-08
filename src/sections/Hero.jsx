@@ -1,6 +1,6 @@
 import AnimateOnScroll from "../components/AnimateOnScroll";
 
-const Hero = () => {
+const Hero = ({ onOpenResume }) => {
   return (
     <section className="hero" id="hero">
       <div className="hero__container">
@@ -33,15 +33,14 @@ const Hero = () => {
             >
               View Selected Works
             </a>
-            <a
-              href="https://www.linkedin.com/in/chiburoma-nation-752395312"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={onOpenResume}
               className="hero__cta hero__cta--secondary"
               aria-label="View Resume & Credentials"
             >
               Resume / CV
-            </a>
+            </button>
             <a
               href="tel:+2348161237136"
               className="hero__cta hero__cta--call"

@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-const Navbar = () => {
+const Navbar = ({ onOpenResume }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -71,15 +71,14 @@ const Navbar = () => {
           </nav>
 
           <div className="navbar__actions">
-            <a
-              href="https://www.linkedin.com/in/chiburoma-nation-752395312"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
               className="navbar__resume-btn"
+              onClick={onOpenResume}
               aria-label="View Resume"
             >
               Resume
-            </a>
+            </button>
 
             <a
               href="tel:+2348161237136"
@@ -161,14 +160,16 @@ const Navbar = () => {
               </nav>
 
               <div className="mobile-drawer__actions">
-                <a
-                  href="https://www.linkedin.com/in/chiburoma-nation-752395312"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
                   className="mobile-drawer__resume-btn"
+                  onClick={() => {
+                    setMobileOpen(false);
+                    if (onOpenResume) onOpenResume();
+                  }}
                 >
                   <span>📄 View Resume / Credentials</span>
-                </a>
+                </button>
                 <a
                   href="tel:+2348161237136"
                   className="mobile-drawer__call-btn"
