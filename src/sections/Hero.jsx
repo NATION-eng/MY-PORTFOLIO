@@ -37,8 +37,6 @@ const Hero = ({ onOpenResume }) => {
             <button
               type="button"
               onClick={onOpenResume}
-              onMouseEnter={() => import("../components/ResumeModal")}
-              onTouchStart={() => import("../components/ResumeModal")}
               className="hero__cta hero__cta--secondary"
               aria-label="View Resume & Credentials"
             >

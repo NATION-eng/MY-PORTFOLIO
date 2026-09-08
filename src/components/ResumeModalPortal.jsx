@@ -1,13 +1,12 @@
-import { useState, useEffect, lazy, Suspense } from "react";
-
-const ResumeModal = lazy(() => import("./ResumeModal"));
+import { useState, useEffect } from "react";
+import ResumeModal from "./ResumeModal";
 
 // Global event-based trigger: decoupled from the React tree so the click handler completes in <1ms
 export const openResumeModal = () => {
-  // Yield to browser immediately so the click interaction paints in the current frame (<16ms INP)
-  setTimeout(() => {
+  // Yield immediately to the browser so the click interaction paints instantly (<5ms INP)
+  requestAnimationFrame(() => {
     window.dispatchEvent(new CustomEvent("open-resume-modal"));
-  }, 0);
+  });
 };
 
 export const ResumeModalPortal = () => {
@@ -22,9 +21,7 @@ export const ResumeModalPortal = () => {
   if (!isOpen) return null;
 
   return (
-    <Suspense fallback={null}>
-      <ResumeModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
-    </Suspense>
+    <ResumeModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
   );
 };
 

@@ -34,7 +34,10 @@ const ResumeModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const handlePrint = () => {
-    window.print();
+    // Run outside the click event task so the native print dialog never blocks the event handler
+    setTimeout(() => {
+      window.print();
+    }, 150);
   };
 
   return (

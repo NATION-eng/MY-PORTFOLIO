@@ -75,8 +75,6 @@ const Navbar = ({ onOpenResume }) => {
               type="button"
               className="navbar__resume-btn"
               onClick={onOpenResume}
-              onMouseEnter={() => import("./ResumeModal")}
-              onTouchStart={() => import("./ResumeModal")}
               aria-label="View Resume"
             >
               Resume
@@ -169,8 +167,6 @@ const Navbar = ({ onOpenResume }) => {
                     setMobileOpen(false);
                     if (onOpenResume) onOpenResume();
                   }}
-                  onMouseEnter={() => import("./ResumeModal")}
-                  onTouchStart={() => import("./ResumeModal")}
                 >
                   <span>📄 View Resume / Credentials</span>
                 </button>
