@@ -16,7 +16,7 @@ const About = () => {
           <div className="about__img-stack">
             <img
               src="/Images/me.jpeg"
-              alt="Nation Chiburoma"
+              alt="Nation Chiburoma Amadi"
               className="about__img about__img--main"
               loading="lazy"
             />

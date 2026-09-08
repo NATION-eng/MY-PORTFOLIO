@@ -70,7 +70,7 @@ const BottomNav = () => {
         <a
           href="tel:+2348161237136"
           className="mobile-dock__call-action"
-          aria-label="Call Nation directly"
+          aria-label="Call Nation Chiburoma Amadi directly"
           title="Direct Phone Line"
         >
           <FiPhone className="mobile-dock__call-icon" />

@@ -5,7 +5,7 @@ const Hero = ({ onOpenResume }) => {
     <section className="hero" id="hero">
       <div className="hero__container">
         <AnimateOnScroll variant="bounce" delay={0.1}>
-          <p className="hero__greeting">Hi, I'm Nation Chiburoma</p>
+          <p className="hero__greeting">Hi, I'm Nation Chiburoma Amadi</p>
         </AnimateOnScroll>
 
         <AnimateOnScroll variant="fade" delay={0.3}>
