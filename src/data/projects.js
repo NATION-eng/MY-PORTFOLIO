@@ -15,7 +15,7 @@ export const projects = [
     title: "M-CEL TECH",
     description:
       "Enterprise IT solutions, custom software engineering, and infrastructure platform built for organizational resilience, cybersecurity, and intelligent cloud automation.",
-    image1: "/Images/mceltech_card.svg",
+    image1: "/Images/mceltech_real.png",
     url: "https://mceltech.com/",
     tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Enterprise IT"],
   },
@@ -23,7 +23,7 @@ export const projects = [
     title: "Vaultify",
     description:
       "An all-in-one digital wealth and savings engine allowing users to automate recurring deposits, lock funds for milestones, and invest in vetted portfolios with up to 16% p.a.",
-    image1: "/Images/vaultify_card.svg",
+    image1: "/Images/vaultify_real.png",
     url: "https://vaultify-rho.vercel.app/",
     tags: ["React", "Tailwind CSS", "Fintech UI", "Vite", "JavaScript"],
   },
@@ -31,7 +31,7 @@ export const projects = [
     title: "M-CEL Tech Academy",
     description:
       "Modern EdTech learning academy featuring practical tech bootcamps, student cohort onboarding, digital certificate verification, and progressive web app (PWA) offline support.",
-    image1: "/Images/mcelacademy_card.svg",
+    image1: "/Images/mcelacademy_real.png",
     url: "https://m-cel-tech-academy.vercel.app/",
     tags: ["React", "PWA", "Tailwind CSS", "Vite", "EdTech"],
   },
@@ -39,7 +39,7 @@ export const projects = [
     title: "VOLT Energy",
     description:
       "High-octane product landing experience featuring cyber-aesthetic typography (Orbitron), high-frequency micro-interactions, and conversion-optimized visual storytelling.",
-    image1: "/Images/volt_card.svg",
+    image1: "/Images/voltenergy_real.png",
     url: "https://voltenergy-nine.vercel.app/",
     tags: ["React", "Framer Motion", "Tailwind CSS", "Interactive UI"],
   },
@@ -47,7 +47,8 @@ export const projects = [
     title: "GreenHarvest Agro",
     description:
       "Agritech platform dedicated to modern agriculture, sustainable food security, responsible farming practices, and end-to-end agribusiness supply chains.",
-    image1: "/Images/greenharvest1.jpeg",
+    image1: "/Images/greenharvest_real.png",
+    image2: "/Images/greenharvest1.jpeg",
     url: "https://greenharvest-agro.vercel.app/",
     tags: ["React", "Tailwind CSS", "Vite", "AgriTech", "Modern UI"],
   },
@@ -55,7 +56,7 @@ export const projects = [
     title: "ApexBuild Engineering",
     description:
       "Corporate structural engineering and commercial construction firm portal highlighting project tenders, architectural capability, and ISO-standard safety protocols.",
-    image1: "/Images/apexbuild_card.svg",
+    image1: "/Images/apexbuild_real.png",
     url: "https://apexbuild-engineerin-ubwg.bolt.host",
     tags: ["React", "TypeScript", "Tailwind CSS", "Civil Engineering"],
   },
@@ -63,7 +64,7 @@ export const projects = [
     title: "Savor & Spice Bistro",
     description:
       "Contemporary dining portal blending African culinary heritage with fine-casual presentation, real-time table reservations, craft mixology, and dynamic digital menus.",
-    image1: "/Images/savor_card.svg",
+    image1: "/Images/savor_real.png",
     url: "https://savor-and-spice-bist-xga0.bolt.host/",
     tags: ["React", "Tailwind CSS", "Vite", "Hospitality Tech"],
   },
@@ -71,7 +72,7 @@ export const projects = [
     title: "Connected in Praise 2026",
     description:
       "Multi-day annual praise concert and evangelism event portal featuring schedule coordination, guest choir spotlights, and attendee registration pipelines.",
-    image1: "/Images/connected_card.svg",
+    image1: "/Images/connected_real.png",
     url: "https://connected-in-praise-mipz.bolt.host/",
     tags: ["React", "Tailwind CSS", "Event Platform", "Vite"],
   },
