@@ -10,20 +10,14 @@ const Hero = () => {
 
         <AnimateOnScroll variant="fade" delay={0.3}>
           <h1 className="hero__title">
-            <span className="hero__title-accent">Software</span> &{" "}
-            <br className="hero__br" />
-            Front-End Developer <br />
-            you can <span className="hero__title-accent">Rely</span> on
+            Software Engineer &amp; <br className="hero__br" />
+            <span className="hero__title-accent">Full-Stack Developer</span>
           </h1>
         </AnimateOnScroll>
 
         <AnimateOnScroll variant="fade" delay={0.5}>
           <p className="hero__subtitle">
-            I turn complex ideas into experiences users love and investors trust.
-            <span className="hero__subtitle-extended">
-              {" "}I help early-stage startups, founders, and SaaS teams craft
-              story-driven brands and products.
-            </span>
+            Building scalable web applications, fluid user interfaces, and resilient production architectures that users love and businesses trust.
           </p>
         </AnimateOnScroll>
 
@@ -40,8 +34,17 @@ const Hero = () => {
               View Selected Works
             </a>
             <a
-              href="tel:+2348161237136"
+              href="https://www.linkedin.com/in/chiburoma-nation-752395312"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hero__cta hero__cta--secondary"
+              aria-label="View Resume & Credentials"
+            >
+              Resume / CV
+            </a>
+            <a
+              href="tel:+2348161237136"
+              className="hero__cta hero__cta--call"
               aria-label="Direct Phone Call"
             >
               Call 08161237136

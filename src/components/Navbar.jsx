@@ -72,6 +72,16 @@ const Navbar = () => {
 
           <div className="navbar__actions">
             <a
+              href="https://www.linkedin.com/in/chiburoma-nation-752395312"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="navbar__resume-btn"
+              aria-label="View Resume"
+            >
+              Resume
+            </a>
+
+            <a
               href="tel:+2348161237136"
               className="navbar__quick-call"
               aria-label="Direct Call"
@@ -151,6 +161,14 @@ const Navbar = () => {
               </nav>
 
               <div className="mobile-drawer__actions">
+                <a
+                  href="https://www.linkedin.com/in/chiburoma-nation-752395312"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mobile-drawer__resume-btn"
+                >
+                  <span>📄 View Resume / Credentials</span>
+                </a>
                 <a
                   href="tel:+2348161237136"
                   className="mobile-drawer__call-btn"
