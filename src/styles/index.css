@@ -66,6 +66,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   touch-action: manipulation;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 body {
@@ -73,8 +77,18 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.7;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
-  padding-bottom: env(safe-area-inset-bottom);
+  position: relative;
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+#root, main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 img {
