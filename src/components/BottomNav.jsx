@@ -12,7 +12,9 @@ const BottomNav = () => {
   const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
-    const handleScroll = () => {
+    let ticking = false;
+
+    const updateActiveSection = () => {
       const scrollPosition = window.scrollY + 220;
       const sections = ["hero", "projects", "about", "contact"];
       
@@ -22,10 +24,18 @@ const BottomNav = () => {
           const top = el.offsetTop;
           const height = el.offsetHeight;
           if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(sectionId);
+            setActiveSection((prev) => (prev !== sectionId ? sectionId : prev));
             break;
           }
         }
+      }
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateActiveSection);
+        ticking = true;
       }
     };
 

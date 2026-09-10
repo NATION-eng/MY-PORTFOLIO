@@ -1,3 +1,4 @@
+import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const ProjectCard = ({ project, index }) => {
@@ -28,7 +29,17 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         <div className="project-card__content">
-          <h3 className="project-card__title">{project.title}</h3>
+          <h3 className="project-card__title">
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card__title-link"
+              title={`Visit ${project.title}`}
+            >
+              {project.title}
+            </a>
+          </h3>
           <p className="project-card__desc">{project.description}</p>
           <div className="project-card__tags">
             {project.tags.map((tag) => (
@@ -53,4 +64,4 @@ const ProjectCard = ({ project, index }) => {
   );
 };
 
-export default ProjectCard;
+export default React.memo(ProjectCard);

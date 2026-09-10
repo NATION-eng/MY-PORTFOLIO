@@ -827,6 +827,8 @@
   border-radius: var(--radius-xl);
   transition: border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
   overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 450px;
 }
 
 .project-card:hover {
@@ -894,6 +896,19 @@
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.project-card__title-link {
+  color: inherit;
+  text-decoration: none;
+  touch-action: manipulation;
+  display: inline-block;
+  transition: color 0.25s var(--ease);
+}
+
+.project-card__title-link:hover {
+  color: var(--accent-light);
 }
 
 .project-card__desc {

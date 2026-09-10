@@ -77,24 +77,6 @@ export const projects = [
     tags: ["React", "Tailwind CSS", "Event Platform", "Vite"],
   },
   {
-    title: "DevRift",
-    description:
-      "Flagship site for a web development agency featuring fluid animations, responsive layouts, client showcases, and modern brand design.",
-    image1: "/Images/devrift1.PNG",
-    image2: "/Images/devrift2.PNG",
-    url: "https://devrift-interprise.vercel.app",
-    tags: ["React", "CSS", "Framer Motion"],
-  },
-  {
-    title: "WealthSpace Properties",
-    description:
-      "A real-estate platform where users can browse premium property listings. Features filtering, property detail views, and a polished UI.",
-    image1: "/Images/space1.PNG",
-    image2: "/Images/space2.PNG",
-    url: "https://wealthspace-properties.vercel.app",
-    tags: ["React", "CSS", "Real Estate"],
-  },
-  {
     title: "Solar Estimator",
     description:
       "Interactive calculation engine helping homeowners and businesses estimate rooftop solar capacity, energy output, and installation cost models.",
@@ -111,15 +93,6 @@ export const projects = [
     image2: "/Images/site 2.jpeg",
     url: "https://site-pilot-phi.vercel.app/",
     tags: ["JavaScript", "CSS", "AI Tooling"],
-  },
-  {
-    title: "ChrisBank",
-    description:
-      "A fintech landing page featuring a modern UI with an admin dashboard and user portal. Clean typography and conversion-focused design.",
-    image1: "/Images/chrisban1.PNG",
-    image2: "/Images/chrisban2.PNG",
-    url: "https://chrisbank.vercel.app",
-    tags: ["HTML", "CSS", "Fintech Concept"],
   },
   {
     title: "Tourist Guide",
