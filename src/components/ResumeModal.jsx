@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FiX, FiPrinter, FiMail, FiPhone, FiMapPin, FiGithub, 
   FiLinkedin, FiExternalLink, FiCpu, FiCode, FiServer, 
-  FiDatabase, FiAward, FiCheckCircle, FiSun, FiMoon 
+  FiDatabase, FiAward, FiCheckCircle, FiSun, FiMoon, FiGlobe 
 } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -81,6 +81,23 @@ const ResumeModal = ({ isOpen, onClose }) => {
               </button>
             </div>
 
+            {/* View General Portfolio */}
+            <a
+              href="#projects"
+              className="resume-toolbar__btn resume-toolbar__btn--portfolio"
+              onClick={(e) => {
+                e.preventDefault();
+                onClose();
+                setTimeout(() => {
+                  document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
+                }, 80);
+              }}
+              title="Return to General Portfolio & Works"
+            >
+              <FiGlobe />
+              <span>General Portfolio</span>
+            </a>
+
             {/* Print / Save to PDF */}
             <button 
               type="button"
@@ -151,6 +168,20 @@ const ResumeModal = ({ isOpen, onClose }) => {
 
             {/* Interactive Contact Matrix */}
             <div className="resume-contact-bar">
+              <a 
+                href="#projects" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  onClose();
+                  setTimeout(() => {
+                    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
+                  }, 80);
+                }} 
+                className="resume-contact-link resume-contact-link--portfolio"
+                title="View Full Interactive Portfolio & Commercial Deployments"
+              >
+                <FiGlobe className="icon" /> General Portfolio (Live Showcase)
+              </a>
               <a href="mailto:chiburomanation6@gmail.com" className="resume-contact-link">
                 <FiMail className="icon" /> chiburomanation6@gmail.com
               </a>
@@ -406,6 +437,31 @@ const ResumeModal = ({ isOpen, onClose }) => {
                     </p>
                     <span className="resume-project-card__stack">React &bull; Cart Architecture &bull; WhatsApp API</span>
                   </div>
+                </div>
+
+                {/* Direct Link to General Portfolio Showcase */}
+                <div className="resume-portfolio-banner">
+                  <div className="resume-portfolio-banner__content">
+                    <FiGlobe className="resume-portfolio-banner__icon" />
+                    <div>
+                      <span className="resume-portfolio-banner__title">Explore Full General Portfolio</span>
+                      <p className="resume-portfolio-banner__desc">Browse all 12 live production applications, AI agent tools, and interactive web platforms.</p>
+                    </div>
+                  </div>
+                  <a
+                    href="#projects"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onClose();
+                      setTimeout(() => {
+                        document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
+                      }, 80);
+                    }}
+                    className="resume-portfolio-banner__btn"
+                    title="Return to Portfolio Section"
+                  >
+                    View All Works <FiExternalLink />
+                  </a>
                 </div>
               </section>
             </main>

@@ -1798,6 +1798,20 @@
   transform: translateY(-1px);
 }
 
+.resume-toolbar__btn--portfolio {
+  background: rgba(124, 106, 255, 0.15);
+  color: #c4b5fd;
+  border: 1px solid rgba(124, 106, 255, 0.35);
+  text-decoration: none;
+}
+
+.resume-toolbar__btn--portfolio:hover {
+  background: rgba(124, 106, 255, 0.28);
+  color: #ffffff;
+  border-color: rgba(124, 106, 255, 0.6);
+  transform: translateY(-1px);
+}
+
 .resume-toolbar__btn--close {
   background: rgba(255, 255, 255, 0.08);
   color: #e2e8f0;
@@ -1963,6 +1977,19 @@
 
 .resume-contact-link--wa .icon {
   color: #22c55e;
+}
+
+.resume-contact-link--portfolio {
+  color: #c4b5fd;
+  font-weight: 600;
+}
+
+.resume-contact-link--portfolio .icon {
+  color: #a78bfa;
+}
+
+.resume-contact-link--portfolio:hover {
+  color: #ffffff;
 }
 
 /* 2-Column Grid */
@@ -2274,6 +2301,68 @@
   display: block;
 }
 
+/* Portfolio Showcase Banner */
+.resume-portfolio-banner {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, rgba(124, 106, 255, 0.12) 0%, rgba(56, 189, 248, 0.08) 100%);
+  border: 1px solid rgba(124, 106, 255, 0.28);
+  border-radius: 12px;
+}
+
+.resume-portfolio-banner__content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.resume-portfolio-banner__icon {
+  font-size: 24px;
+  color: #a78bfa;
+  flex-shrink: 0;
+}
+
+.resume-portfolio-banner__title {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.resume-portfolio-banner__desc {
+  font-size: 11.5px;
+  color: #94a3b8;
+  margin: 2px 0 0 0;
+  line-height: 1.4;
+}
+
+.resume-portfolio-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff !important;
+  background: var(--gradient);
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(124, 106, 255, 0.35);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.resume-portfolio-banner__btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(124, 106, 255, 0.5);
+  color: #ffffff !important;
+}
+
 /* ============================================================
    CLEAN ATS PAPER THEME (WHEN USER SWITCHES TO CLEAN PAPER)
    ============================================================ */
@@ -2412,6 +2501,37 @@
   color: #475569;
 }
 
+.resume-paper--ats .resume-contact-link--portfolio {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.resume-paper--ats .resume-contact-link--portfolio .icon {
+  color: #2563eb;
+}
+
+.resume-paper--ats .resume-portfolio-banner {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+}
+
+.resume-paper--ats .resume-portfolio-banner__title {
+  color: #0f172a;
+}
+
+.resume-paper--ats .resume-portfolio-banner__desc {
+  color: #475569;
+}
+
+.resume-paper--ats .resume-portfolio-banner__icon {
+  color: #2563eb;
+}
+
+.resume-paper--ats .resume-portfolio-banner__btn {
+  background: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
 /* ============================================================
    RESPONSIVE ADJUSTMENTS (TABLETS & PHONES)
    ============================================================ */
@@ -2457,6 +2577,26 @@
     width: 100%;
     justify-content: space-between;
   }
+
+  .resume-portfolio-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .resume-portfolio-banner__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-toolbar__btn--portfolio span {
+    display: none;
+  }
+  .resume-toolbar__btn--portfolio {
+    padding: 8px 10px;
+  }
 }
 
 /* ============================================================
@@ -2481,7 +2621,8 @@
   .mobile-drawer-backdrop,
   main,
   footer,
-  .resume-toolbar {
+  .resume-toolbar,
+  .resume-portfolio-banner {
     display: none !important;
   }
 
