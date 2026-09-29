@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import ResumeModal from "./ResumeModal";
 
-// Global event-based trigger: decoupled from the React tree so the click handler completes in <1ms
+// Global event-based trigger: decoupled from the React tree so the click handler returns instantly.
 export const openResumeModal = () => {
-  // Yield immediately to the browser so the click interaction paints instantly (<5ms INP)
-  requestAnimationFrame(() => {
+  // setTimeout(0) defers to the next macrotask, giving the browser a full paint cycle
+  // before React mounts the modal tree — eliminates the span/button INP blocking issue.
+  setTimeout(() => {
     window.dispatchEvent(new CustomEvent("open-resume-modal"));
-  });
+  }, 0);
 };
 
 export const ResumeModalPortal = () => {
