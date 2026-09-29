@@ -169,7 +169,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
             {/* Interactive Contact Matrix */}
             <div className="resume-contact-bar">
               <a 
-                href="#projects" 
+                href="https://nationchiburoma.dev#projects" 
                 onClick={(e) => {
                   e.preventDefault();
                   onClose();
@@ -281,7 +281,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
             </aside>
 
             {/* RIGHT COLUMN: Experience & Key Deliverables (62%) */}
-            <main className="resume-col-main">
+            <div className="resume-col-main">
               {/* Professional Experience */}
               <section className="resume-section">
                 <div className="resume-section__header">
@@ -449,7 +449,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
                     </div>
                   </div>
                   <a
-                    href="#projects"
+                    href="https://nationchiburoma.dev#projects"
                     onClick={(e) => {
                       e.preventDefault();
                       onClose();
@@ -464,7 +464,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
                   </a>
                 </div>
               </section>
-            </main>
+            </div>
           </div>
         </motion.div>
       </div>

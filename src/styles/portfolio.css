@@ -2604,25 +2604,27 @@
    ============================================================ */
 @media print {
   @page {
-    margin: 10mm 12mm;
+    margin: 8mm 10mm;
     size: A4 portrait;
   }
 
   html, body {
     background: #ffffff !important;
     color: #000000 !important;
-    font-size: 10pt !important;
+    font-size: 9.5pt !important;
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 0 !important;
   }
 
-  /* Hide everything except resume */
+  /* Hide portfolio chrome/sections — do NOT use generic main tag */
   .navbar,
   .mobile-dock,
   .mobile-drawer,
   .mobile-drawer-backdrop,
-  main,
+  #root > main,
   footer,
-  .resume-toolbar,
-  .resume-portfolio-banner {
+  .resume-toolbar {
     display: none !important;
   }
 
@@ -2632,6 +2634,9 @@
     padding: 0 !important;
     overflow: visible !important;
     backdrop-filter: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    transform: none !important;
   }
 
   .resume-paper {
@@ -2643,36 +2648,55 @@
     border: none !important;
     border-radius: 0 !important;
     max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    transform: none !important;
   }
 
   .resume-paper .resume-header {
     border-bottom: 2px solid #333333 !important;
-    padding-bottom: 14px !important;
-    margin-bottom: 16px !important;
+    padding: 0 0 12px 0 !important;
+    margin-bottom: 14px !important;
+    background: transparent !important;
   }
 
   .resume-paper .resume-header__name {
     color: #000000 !important;
     -webkit-text-fill-color: #000000 !important;
-    font-size: 22pt !important;
+    font-size: 20pt !important;
+    font-weight: 800 !important;
+    line-height: 1.15 !important;
   }
 
   .resume-paper .resume-header__role {
     color: #1d4ed8 !important;
-    font-size: 12pt !important;
+    font-size: 11pt !important;
+    font-weight: 600 !important;
+    margin-top: 3px !important;
   }
 
   .resume-paper .resume-header__summary {
     color: #333333 !important;
-    font-size: 9.5pt !important;
+    font-size: 9pt !important;
+    line-height: 1.55 !important;
+    margin: 8px 0 10px 0 !important;
   }
 
   .resume-paper .resume-contact-bar {
-    border-top: 1px solid #cccccc !important;
+    border-top: 1px solid #e2e8f0 !important;
+    padding-top: 8px !important;
+    gap: 6px 12px !important;
   }
 
   .resume-paper .resume-contact-link {
-    color: #222222 !important;
+    color: #1e293b !important;
+    font-size: 8pt !important;
+    text-decoration: none !important;
+  }
+
+  .resume-paper .resume-contact-link .icon {
+    color: #2563eb !important;
   }
 
   .resume-header__quick-stats,
@@ -2681,68 +2705,180 @@
   }
 
   .resume-grid {
-    grid-template-columns: 260px 1fr !important;
+    display: grid !important;
+    grid-template-columns: 220px 1fr !important;
+    gap: 16px !important;
+    align-items: start !important;
+  }
+
+  .resume-col-side {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .resume-col-main {
+    display: flex !important;
+    flex-direction: column !important;
     gap: 18px !important;
   }
 
   .resume-paper .resume-card {
     background: #ffffff !important;
-    border: 1px solid #cccccc !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
     padding: 10px !important;
     box-shadow: none !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   .resume-paper .resume-card__title {
     color: #000000 !important;
-    font-size: 10.5pt !important;
+    font-size: 9.5pt !important;
+    font-weight: 700 !important;
   }
 
   .resume-paper .resume-tag {
     background: #f1f5f9 !important;
-    color: #111111 !important;
-    border: 1px solid #cccccc !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    font-size: 7.5pt !important;
+    padding: 2px 6px !important;
+  }
+
+  .resume-paper .resume-tag--highlight {
+    background: #ede9fe !important;
+    color: #4338ca !important;
+    border-color: #c4b5fd !important;
+    font-weight: 700 !important;
+  }
+
+  .resume-paper .resume-section__header {
+    margin-bottom: 10px !important;
   }
 
   .resume-paper .resume-section__title {
     color: #000000 !important;
-    font-size: 11pt !important;
+    font-size: 10.5pt !important;
+    font-weight: 800 !important;
   }
 
   .resume-paper .resume-section__line {
-    background: #666666 !important;
+    background: #cbd5e1 !important;
   }
 
   .resume-paper .resume-timeline-item {
-    border-left: 1.5px solid #999999 !important;
+    border-left: 1.5px solid #94a3b8 !important;
+    padding-left: 16px !important;
+    padding-bottom: 14px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   .resume-paper .resume-timeline-bullet {
-    background: #000000 !important;
+    background: #1d4ed8 !important;
     border-color: #ffffff !important;
+    box-shadow: none !important;
   }
 
   .resume-paper .resume-timeline-role {
     color: #000000 !important;
+    font-size: 10pt !important;
+    font-weight: 700 !important;
   }
 
   .resume-paper .resume-timeline-company {
-    color: #444444 !important;
+    color: #475569 !important;
+    font-size: 8.5pt !important;
+  }
+
+  .resume-paper .resume-timeline-badge {
+    background: #ede9fe !important;
+    color: #4338ca !important;
+    border: 1px solid #c4b5fd !important;
+    font-size: 7.5pt !important;
   }
 
   .resume-paper .resume-timeline-bullets {
-    color: #222222 !important;
+    color: #1e293b !important;
+    font-size: 8.5pt !important;
+    line-height: 1.5 !important;
+  }
+
+  .resume-paper .resume-timeline-bullets strong {
+    color: #000000 !important;
+  }
+
+  .resume-paper .resume-role-tags span {
+    background: #f1f5f9 !important;
+    color: #475569 !important;
+    border: 1px solid #cbd5e1 !important;
+    font-size: 7.5pt !important;
+  }
+
+  .resume-paper .resume-projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
   }
 
   .resume-paper .resume-project-card {
     background: #ffffff !important;
-    border: 1px solid #cccccc !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   .resume-paper .resume-project-card__name {
     color: #000000 !important;
+    font-size: 9.5pt !important;
+    font-weight: 700 !important;
+  }
+
+  .resume-paper .resume-project-card__link {
+    color: #1d4ed8 !important;
+    font-size: 8pt !important;
   }
 
   .resume-paper .resume-project-card__desc {
-    color: #444444 !important;
+    color: #475569 !important;
+    font-size: 8pt !important;
+    line-height: 1.4 !important;
+  }
+
+  .resume-paper .resume-project-card__stack {
+    color: #64748b !important;
+    font-size: 7.5pt !important;
+  }
+
+  .resume-paper .resume-portfolio-banner {
+    display: flex !important;
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 8px !important;
+    padding: 10px 14px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .resume-paper .resume-portfolio-banner__title {
+    color: #1e1b4b !important;
+    font-size: 9pt !important;
+    font-weight: 700 !important;
+  }
+
+  .resume-paper .resume-portfolio-banner__desc {
+    color: #475569 !important;
+    font-size: 8pt !important;
+  }
+
+  .resume-paper .resume-portfolio-banner__btn {
+    background: #2563eb !important;
+    color: #ffffff !important;
+    font-size: 8pt !important;
+    padding: 6px 12px !important;
   }
 }
