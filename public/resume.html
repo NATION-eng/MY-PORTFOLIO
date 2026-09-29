@@ -3,723 +3,753 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NATION CHIBUROMA AMADI — Senior Full-Stack Engineer & AI Systems Architect</title>
-  <meta name="description" content="Professional resume of NATION CHIBUROMA AMADI — Senior Full-Stack Software Engineer & AI Systems Architect with 4+ years of production experience." />
+  <title>NATION CHIBUROMA AMADI — Resume</title>
   <style>
-    /* ── Reset & Base ── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* ── Force exact colors in print ── */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
-      --ink:      #0f1117;
-      --ink2:     #374151;
-      --ink3:     #6b7280;
-      --border:   #e5e7eb;
-      --accent:   #6366f1;
-      --accent2:  #8b5cf6;
-      --green:    #10b981;
-      --blue:     #3b82f6;
-      --bg-card:  #f9fafb;
-      --bg-tag:   #ede9fe;
-      --tag-txt:  #4338ca;
+      --purple:  #4f46e5;
+      --purple2: #6366f1;
+      --dark:    #1e1b4b;
+      --ink:     #111827;
+      --ink2:    #374151;
+      --ink3:    #6b7280;
+      --border:  #e5e7eb;
+      --green:   #059669;
+      --light:   #f5f3ff;
     }
 
-    html { font-size: 15px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-
-    body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: #f3f4f6;
+    html, body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 13px;
+      background: #e5e7eb;
       color: var(--ink);
-      min-height: 100vh;
-      padding: 24px 16px 60px;
     }
 
-    a { color: inherit; text-decoration: none; }
+    a { color: var(--purple); text-decoration: none; }
     a:hover { text-decoration: underline; }
     ul { list-style: none; }
 
-    /* ── Toolbar ── */
+    /* ── Screen Toolbar (hidden on print) ── */
     .toolbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 10px;
-      max-width: 960px;
-      margin: 0 auto 18px;
+      max-width: 820px;
+      margin: 24px auto 16px;
       background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 10px 16px;
-      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      border-radius: 12px;
+      padding: 12px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
     }
-    .toolbar__badge {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: .78rem;
+    .toolbar-left {
+      font-size: 12px;
       font-weight: 700;
-      letter-spacing: .06em;
+      color: var(--purple);
+      letter-spacing: .05em;
       text-transform: uppercase;
-      color: var(--accent);
     }
-    .pulse-dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--green);
-      box-shadow: 0 0 0 0 rgba(16,185,129,.4);
-      animation: pulse 2s infinite;
-      flex-shrink: 0;
-    }
-    @keyframes pulse {
-      0%   { box-shadow: 0 0 0 0 rgba(16,185,129,.4); }
-      70%  { box-shadow: 0 0 0 8px rgba(16,185,129,0); }
-      100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); }
-    }
-    .toolbar__actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .toolbar-right { display: flex; gap: 8px; flex-wrap: wrap; }
+
     .btn {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 7px 14px;
+      padding: 8px 16px;
       border-radius: 8px;
-      font-size: .82rem;
-      font-weight: 600;
+      font-size: 12px;
+      font-weight: 700;
       cursor: pointer;
-      border: 1.5px solid transparent;
-      transition: background .15s, color .15s, border-color .15s;
-      text-decoration: none;
-      background: var(--bg-card);
+      border: 1.5px solid var(--border);
+      background: #f9fafb;
       color: var(--ink2);
-      border-color: var(--border);
+      text-decoration: none;
+      transition: all .15s;
     }
-    .btn:hover { background: #e0e7ff; border-color: var(--accent); color: var(--accent); text-decoration: none; }
-    .btn--primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .btn--primary:hover { background: var(--accent2); border-color: var(--accent2); color: #fff; }
-    .btn svg { width: 14px; height: 14px; }
+    .btn:hover { background: var(--light); border-color: var(--purple); color: var(--purple); text-decoration: none; }
+    .btn-primary { background: var(--purple); color: #fff; border-color: var(--purple); }
+    .btn-primary:hover { background: var(--dark); border-color: var(--dark); color: #fff; }
 
-    /* ── Paper ── */
+    /* ── Paper — A4 proportions ── */
     .paper {
-      max-width: 960px;
-      margin: 0 auto;
+      width: 820px;
+      max-width: 100%;
+      margin: 0 auto 40px;
       background: #fff;
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      box-shadow: 0 8px 40px rgba(0,0,0,.08);
-      overflow: hidden;
+      box-shadow: 0 4px 32px rgba(0,0,0,.12);
     }
 
-    /* ── Header ── */
-    .resume-header {
-      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4338ca 100%);
+    /* ── HEADER ── */
+    .rh {
+      background: #1e1b4b;
       color: #fff;
-      padding: 36px 36px 28px;
+      padding: 30px 36px 24px;
     }
-    .resume-header__top { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 16px; }
-    .status-badge {
+    .rh-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 14px;
+    }
+    .avail-badge {
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
       border-radius: 20px;
       padding: 4px 12px;
-      font-size: .7rem;
-      font-weight: 700;
-      letter-spacing: .08em;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .1em;
       text-transform: uppercase;
-      color: #c7d2fe;
+      color: #a5b4fc;
       margin-bottom: 10px;
     }
-    h1.name {
-      font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: .01em;
-      line-height: 1.15;
+    .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #10b981;
+      flex-shrink: 0;
+    }
+    .rh-name {
+      font-size: 26px;
+      font-weight: 900;
       color: #fff;
+      letter-spacing: .02em;
+      line-height: 1.1;
     }
-    .role-title {
-      font-size: 1rem;
-      font-weight: 500;
-      color: #c7d2fe;
+    .rh-role {
+      font-size: 13px;
+      color: #a5b4fc;
       margin-top: 4px;
+      font-weight: 500;
     }
-    .quick-stats { display: flex; gap: 12px; flex-wrap: wrap; }
-    .stat-pill {
+    .stats {
+      display: flex;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .stat {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.18);
-      border-radius: 12px;
-      padding: 8px 16px;
-      min-width: 72px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 10px;
+      padding: 8px 14px;
+      min-width: 68px;
     }
-    .stat-val { font-size: 1.2rem; font-weight: 800; color: #fff; }
-    .stat-lbl { font-size: .65rem; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: .06em; }
+    .stat-v { font-size: 16px; font-weight: 900; color: #fff; }
+    .stat-l { font-size: 9px; font-weight: 700; color: #a5b4fc; text-transform: uppercase; letter-spacing: .06em; }
 
-    .summary {
-      font-size: .88rem;
+    .rh-bio {
+      font-size: 12px;
       line-height: 1.7;
-      color: #e0e7ff;
-      margin-bottom: 20px;
+      color: #c7d2fe;
+      margin-bottom: 18px;
     }
 
-    /* Contact Bar */
-    .contact-bar {
+    /* Contact row */
+    .contacts {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 6px;
     }
-    .contact-link {
+    .c-link {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 5px 11px;
-      border-radius: 8px;
-      font-size: .78rem;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
       font-weight: 500;
       color: #c7d2fe;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.14);
-      transition: background .15s, color .15s;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
       text-decoration: none;
     }
-    .contact-link:hover { background: rgba(255,255,255,.2); color: #fff; text-decoration: none; }
-    .contact-link--portfolio { background: rgba(99,102,241,.3); border-color: rgba(165,180,252,.4); color: #a5b4fc; }
-    .contact-link--wa { background: rgba(16,185,129,.18); border-color: rgba(16,185,129,.35); color: #6ee7b7; }
-    .contact-link svg { width: 13px; height: 13px; }
+    .c-link:hover { background: rgba(255,255,255,.15); color: #fff; text-decoration: none; }
+    .c-link--port { background: rgba(99,102,241,.3); border-color: rgba(165,180,252,.4); color: #a5b4fc; }
+    .c-link--wa   { background: rgba(16,185,129,.18); border-color: rgba(16,185,129,.35); color: #6ee7b7; }
 
-    /* ── Body Grid ── */
-    .resume-grid {
+    /* ── BODY GRID ── */
+    .body {
       display: grid;
-      grid-template-columns: 38% 1fr;
-      min-height: 0;
+      grid-template-columns: 260px 1fr;
     }
 
-    /* ── Left Sidebar ── */
-    .col-side {
+    /* ── LEFT SIDEBAR ── */
+    .sidebar {
       background: #fafafa;
       border-right: 1px solid var(--border);
-      padding: 28px 22px;
+      padding: 24px 18px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 18px;
     }
-    .card {
+    .s-card {
       background: #fff;
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
+      border-radius: 10px;
+      padding: 13px;
     }
-    .card--ai-glow {
+    .s-card--ai {
+      background: #f5f3ff;
       border-color: #c4b5fd;
-      background: linear-gradient(135deg, #faf5ff 0%, #f5f3ff 100%);
-      box-shadow: 0 0 0 1px #ddd6fe;
     }
-    .card__title-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
-    .card__icon { width: 18px; height: 18px; color: var(--ink3); flex-shrink: 0; }
-    .card__icon--ai { color: var(--accent); }
-    .card__title { font-size: .82rem; font-weight: 700; color: var(--ink); }
+    .s-card-head {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 10px;
+    }
+    .s-card-head h2 {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .ico { width: 14px; height: 14px; color: var(--ink3); }
+    .ico--ai { color: var(--purple); }
 
-    .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; }
     .tag {
       display: inline-block;
-      padding: 3px 9px;
-      border-radius: 6px;
-      font-size: .72rem;
+      padding: 2px 7px;
+      border-radius: 5px;
+      font-size: 10px;
       font-weight: 500;
       background: #f1f5f9;
       color: var(--ink2);
       border: 1px solid var(--border);
     }
-    .tag--highlight { background: #ede9fe; color: #4338ca; border-color: #c4b5fd; font-weight: 700; }
-    .tag--accent { background: #e0f2fe; color: #0369a1; border-color: #bae6fd; }
+    .tag-hl { background: #ede9fe; color: #4338ca; border-color: #c4b5fd; font-weight: 700; }
+    .tag-bl { background: #e0f2fe; color: #0369a1; border-color: #bae6fd; }
 
-    .edu-block__header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
-    .edu-block__degree { font-size: .82rem; font-weight: 700; color: var(--ink); }
-    .badge-green {
-      padding: 2px 8px;
+    .edu-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 3px; }
+    .edu-degree { font-size: 11px; font-weight: 800; color: var(--ink); }
+    .badge-g {
+      padding: 1px 7px;
       border-radius: 20px;
-      font-size: .65rem;
-      font-weight: 700;
+      font-size: 9px;
+      font-weight: 800;
       background: #d1fae5;
       color: #065f46;
       border: 1px solid #a7f3d0;
       white-space: nowrap;
     }
-    .edu-block__school { font-size: .78rem; color: var(--accent); font-weight: 600; margin-bottom: 4px; }
-    .edu-block__note { font-size: .75rem; color: var(--ink3); line-height: 1.5; }
+    .edu-school { font-size: 10px; color: var(--purple); font-weight: 700; margin-bottom: 3px; }
+    .edu-note { font-size: 10px; color: var(--ink3); line-height: 1.5; }
 
-    /* ── Right Main Column ── */
-    .col-main { padding: 28px 28px 32px; }
+    /* ── RIGHT MAIN ── */
+    .main { padding: 24px 26px 28px; }
 
-    .section { margin-bottom: 32px; }
-    .section__header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
-    .section__title { font-size: .9rem; font-weight: 800; color: var(--ink); letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
-    .section__line { flex: 1; height: 1px; background: var(--border); }
+    .sec { margin-bottom: 24px; }
+    .sec-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--purple);
+    }
+    .sec-title {
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--dark);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
 
     /* Timeline */
-    .timeline-item {
+    .t-item {
       position: relative;
-      padding-left: 24px;
-      margin-bottom: 24px;
-      padding-bottom: 24px;
+      padding-left: 18px;
+      margin-bottom: 18px;
+      padding-bottom: 18px;
       border-bottom: 1px dashed var(--border);
     }
-    .timeline-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .timeline-bullet {
+    .t-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .t-dot {
       position: absolute;
-      left: 0;
-      top: 6px;
-      width: 10px;
-      height: 10px;
+      left: 0; top: 5px;
+      width: 9px; height: 9px;
       border-radius: 50%;
-      background: var(--accent);
+      background: var(--purple);
       border: 2px solid #fff;
-      box-shadow: 0 0 0 2px var(--accent);
+      box-shadow: 0 0 0 2px var(--purple);
     }
-    .timeline-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
-    .timeline-role { font-size: .92rem; font-weight: 700; color: var(--ink); line-height: 1.3; }
-    .timeline-company { font-size: .78rem; color: var(--ink3); margin-top: 2px; }
-    .timeline-badge {
-      padding: 3px 10px;
+    .t-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .t-role { font-size: 13px; font-weight: 800; color: var(--ink); line-height: 1.3; }
+    .t-co { font-size: 11px; color: var(--ink3); margin-top: 2px; }
+    .t-badge {
+      padding: 2px 9px;
       border-radius: 20px;
-      font-size: .7rem;
-      font-weight: 700;
+      font-size: 10px;
+      font-weight: 800;
       background: #ede9fe;
       color: #4338ca;
       border: 1px solid #c4b5fd;
       white-space: nowrap;
+      flex-shrink: 0;
     }
-    .timeline-bullets { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
-    .timeline-bullets li {
-      font-size: .82rem;
+    .t-bullets { display: flex; flex-direction: column; gap: 5px; margin-bottom: 8px; }
+    .t-bullets li {
+      font-size: 11.5px;
       color: var(--ink2);
       line-height: 1.6;
-      padding-left: 14px;
+      padding-left: 13px;
       position: relative;
     }
-    .timeline-bullets li::before {
+    .t-bullets li::before {
       content: '▸';
       position: absolute;
       left: 0;
-      color: var(--accent);
-      font-size: .7rem;
-      top: 2px;
+      color: var(--purple);
+      font-size: 10px;
+      top: 1px;
     }
-    .role-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-    .role-tags span {
-      font-size: .68rem;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 5px;
+    .t-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+    .t-tags span {
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
       background: #f1f5f9;
       color: var(--ink3);
       border: 1px solid var(--border);
     }
 
-    /* Projects Grid */
-    .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
+    /* Projects grid */
+    .proj-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
     .proj-card {
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 13px 14px;
-      background: var(--bg-card);
+      border-radius: 8px;
+      padding: 11px 12px;
+      background: #fafafa;
     }
-    .proj-card__top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
-    .proj-card__name { font-size: .82rem; font-weight: 700; color: var(--ink); }
-    .proj-card__link {
+    .proj-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      margin-bottom: 5px;
+    }
+    .proj-name { font-size: 11.5px; font-weight: 800; color: var(--ink); }
+    .proj-link {
       display: inline-flex;
       align-items: center;
-      gap: 4px;
-      font-size: .7rem;
-      font-weight: 600;
-      color: var(--accent);
+      gap: 3px;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--purple);
       white-space: nowrap;
       text-decoration: none;
     }
-    .proj-card__link:hover { text-decoration: underline; }
-    .proj-card__link svg { width: 11px; height: 11px; }
-    .proj-card__desc { font-size: .75rem; color: var(--ink3); line-height: 1.5; margin-bottom: 6px; }
-    .proj-card__stack { font-size: .68rem; color: var(--ink3); font-style: italic; }
+    .proj-link:hover { text-decoration: underline; }
+    .proj-desc { font-size: 10.5px; color: var(--ink3); line-height: 1.5; margin-bottom: 5px; }
+    .proj-stack { font-size: 9.5px; color: var(--ink3); font-style: italic; }
 
-    /* Portfolio Banner */
-    .portfolio-banner {
+    /* Portfolio banner */
+    .p-banner {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 12px;
-      padding: 14px 18px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      background: #ede9fe;
       border: 1px solid #c4b5fd;
     }
-    .portfolio-banner__content { display: flex; align-items: center; gap: 12px; }
-    .portfolio-banner__icon { width: 20px; height: 20px; color: var(--accent); flex-shrink: 0; }
-    .portfolio-banner__title { display: block; font-size: .84rem; font-weight: 700; color: var(--accent); }
-    .portfolio-banner__desc { font-size: .75rem; color: var(--ink3); margin-top: 2px; }
-    .portfolio-banner__btn {
+    .p-banner-left { display: flex; align-items: center; gap: 10px; }
+    .p-banner-title { display: block; font-size: 12px; font-weight: 800; color: var(--purple); }
+    .p-banner-desc { font-size: 10px; color: var(--ink3); margin-top: 1px; }
+    .p-banner-btn {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 8px 16px;
-      border-radius: 8px;
-      background: var(--accent);
+      gap: 5px;
+      padding: 7px 14px;
+      border-radius: 7px;
+      background: var(--purple);
       color: #fff;
-      font-size: .78rem;
-      font-weight: 700;
+      font-size: 11px;
+      font-weight: 800;
       text-decoration: none;
       white-space: nowrap;
     }
-    .portfolio-banner__btn:hover { background: var(--accent2); text-decoration: none; }
-    .portfolio-banner__btn svg { width: 13px; height: 13px; }
+    .p-banner-btn:hover { background: var(--dark); text-decoration: none; }
 
-    /* ── Footer ── */
-    .resume-footer {
+    /* Footer */
+    .footer {
       text-align: center;
-      padding: 14px;
-      font-size: .72rem;
+      padding: 10px;
+      font-size: 10px;
       color: var(--ink3);
       border-top: 1px solid var(--border);
       background: #fafafa;
     }
 
-    /* ── Print Styles ── */
+    /* ── SVG Icons inline ── */
+    svg { width: 11px; height: 11px; display: inline-block; vertical-align: middle; }
+    .ico svg, .s-card-head svg { width: 14px; height: 14px; }
+
+    /* ── PRINT ── */
     @media print {
-      body { background: #fff; padding: 0; }
+      html, body { background: #fff; }
       .toolbar { display: none !important; }
-      .paper { box-shadow: none; border: none; border-radius: 0; max-width: 100%; }
-      .resume-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-      .card--ai-glow { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-      .portfolio-banner { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-      @page { margin: 12mm; size: A4; }
+      .paper {
+        width: 100%;
+        box-shadow: none;
+        margin: 0;
+      }
+      /* Force ALL backgrounds to print */
+      .rh { background: #1e1b4b !important; }
+      .avail-badge { background: rgba(255,255,255,.1) !important; }
+      .stat { background: rgba(255,255,255,.1) !important; }
+      .c-link--port { background: rgba(99,102,241,.3) !important; }
+      .c-link--wa   { background: rgba(16,185,129,.18) !important; }
+      .s-card--ai   { background: #f5f3ff !important; }
+      .tag-hl       { background: #ede9fe !important; }
+      .tag-bl       { background: #e0f2fe !important; }
+      .t-badge      { background: #ede9fe !important; }
+      .p-banner     { background: #ede9fe !important; }
+      .p-banner-btn { background: #4f46e5 !important; }
+      .sidebar      { background: #fafafa !important; }
+      .proj-card    { background: #fafafa !important; }
+      .footer       { background: #fafafa !important; }
+      .badge-g      { background: #d1fae5 !important; }
+      .dot          { background: #10b981 !important; }
+      .t-dot        { background: #4f46e5 !important; }
+
+      @page { size: A4; margin: 8mm; }
+      .t-item { page-break-inside: avoid; }
+      .sec { page-break-inside: avoid; }
     }
 
-    /* ── Responsive ── */
-    @media (max-width: 700px) {
-      .resume-grid { grid-template-columns: 1fr; }
-      .col-side { border-right: none; border-bottom: 1px solid var(--border); }
-      h1.name { font-size: 1.5rem; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .resume-header { padding: 24px 18px 20px; }
-      .col-main, .col-side { padding: 20px 16px; }
+    /* ── Responsive screen ── */
+    @media screen and (max-width: 860px) {
+      .toolbar { max-width: calc(100% - 32px); }
+      .paper { width: calc(100% - 32px); margin: 0 16px 40px; }
+    }
+    @media screen and (max-width: 620px) {
+      .body { grid-template-columns: 1fr; }
+      .sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+      .proj-grid { grid-template-columns: 1fr; }
+      .rh { padding: 22px 18px 18px; }
+      .rh-top { flex-direction: column; }
+      .rh-name { font-size: 20px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ── Toolbar ── -->
-  <div class="toolbar">
-    <div class="toolbar__badge">
-      <span class="pulse-dot"></span>
-      <span>NATION CHIBUROMA AMADI — Official CV Dossier</span>
+<!-- Toolbar (screen only) -->
+<div class="toolbar">
+  <div class="toolbar-left">📄 NATION CHIBUROMA AMADI — Official Resume</div>
+  <div class="toolbar-right">
+    <a class="btn" href="https://nationchiburoma.dev" target="_blank" rel="noreferrer">
+      🌐 General Portfolio
+    </a>
+    <button class="btn btn-primary" onclick="window.print()">
+      🖨️ Download / Save as PDF
+    </button>
+  </div>
+</div>
+
+<!-- Paper -->
+<div class="paper">
+
+  <!-- HEADER -->
+  <header class="rh">
+    <div class="rh-top">
+      <div>
+        <div class="avail-badge">
+          <span class="dot"></span>
+          AVAILABLE FOR SENIOR &amp; LEAD OPPORTUNITIES
+        </div>
+        <div class="rh-name">NATION CHIBUROMA AMADI</div>
+        <div class="rh-role">Senior Full-Stack Software Engineer &amp; AI Systems Architect</div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-v">4+</span>
+          <span class="stat-l">Years Exp.</span>
+        </div>
+        <div class="stat">
+          <span class="stat-v">15+</span>
+          <span class="stat-l">Apps</span>
+        </div>
+        <div class="stat">
+          <span class="stat-v">99.9%</span>
+          <span class="stat-l">Uptime</span>
+        </div>
+      </div>
     </div>
-    <div class="toolbar__actions">
-      <a class="btn" href="https://nationchiburoma.dev" target="_blank" rel="noreferrer">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        General Portfolio
+
+    <p class="rh-bio">
+      High-impact Software Engineer and Technical Lead with 4+ years of production experience architecting mission-critical web applications, enterprise platforms, and production-grade AI agent pipelines. Deeply versed in modern full-stack architectures (React, Next.js, Node.js, Python, TypeScript) and autonomous LLM integrations. Proven track record of spearheading scalable commercial systems across fintech, energy, and e-commerce that serve thousands of users with resilient cloud infrastructures.
+    </p>
+
+    <div class="contacts">
+      <a href="https://nationchiburoma.dev" target="_blank" rel="noreferrer" class="c-link c-link--port">
+        🌐 nationchiburoma.dev
       </a>
-      <button class="btn btn--primary" onclick="window.print()">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-        Print / Save PDF
-      </button>
+      <a href="mailto:chiburomanation6@gmail.com" class="c-link">
+        ✉️ chiburomanation6@gmail.com
+      </a>
+      <a href="tel:+2348161237136" class="c-link">
+        📞 +234 816 123 7136
+      </a>
+      <a href="https://wa.me/2348116079309" target="_blank" rel="noreferrer" class="c-link c-link--wa">
+        💬 +234 811 607 9309 (WhatsApp)
+      </a>
+      <span class="c-link">
+        📍 Port Harcourt, Nigeria · Remote Worldwide
+      </span>
+      <a href="https://github.com/NATION-eng" target="_blank" rel="noreferrer" class="c-link">
+        💻 github.com/NATION-eng
+      </a>
+      <a href="https://www.linkedin.com/in/chiburoma-nation-752395312" target="_blank" rel="noreferrer" class="c-link">
+        🔗 linkedin.com/in/chiburoma-nation
+      </a>
     </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- AI & Intelligent Systems -->
+      <div class="s-card s-card--ai">
+        <div class="s-card-head">
+          <span style="font-size:14px">🤖</span>
+          <h2>AI &amp; Intelligent Systems</h2>
+        </div>
+        <div class="tags">
+          <span class="tag tag-hl">LLM Integrations</span>
+          <span class="tag tag-hl">RAG Pipelines</span>
+          <span class="tag tag-hl">Autonomous Agents</span>
+          <span class="tag">OpenAI &amp; Anthropic APIs</span>
+          <span class="tag">LangChain &amp; LlamaIndex</span>
+          <span class="tag">Vector DBs (Chroma/Pinecone)</span>
+          <span class="tag">Structured Tool-Calling</span>
+          <span class="tag">Prompt Engineering</span>
+          <span class="tag">Workflow Automation</span>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="s-card">
+        <div class="s-card-head">
+          <span style="font-size:14px">⚡</span>
+          <h2>Frontend Architecture</h2>
+        </div>
+        <div class="tags">
+          <span class="tag tag-bl">React.js</span>
+          <span class="tag tag-bl">Next.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">JavaScript (ES6+)</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Framer Motion</span>
+          <span class="tag">Redux / Zustand</span>
+          <span class="tag">Mobile-First / PWA</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="s-card">
+        <div class="s-card-head">
+          <span style="font-size:14px">🖥️</span>
+          <h2>Backend &amp; Cloud Systems</h2>
+        </div>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">Python (FastAPI, Flask)</span>
+          <span class="tag">RESTful APIs</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Supabase &amp; Firebase</span>
+          <span class="tag">MongoDB &amp; Redis</span>
+          <span class="tag">Docker &amp; CI/CD</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Vercel &amp; Netlify</span>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="s-card">
+        <div class="s-card-head">
+          <span style="font-size:14px">🎓</span>
+          <h2>Education &amp; Credentials</h2>
+        </div>
+        <div class="edu-head">
+          <div class="edu-degree">Diploma in Software Engineering</div>
+          <span class="badge-g">Certified</span>
+        </div>
+        <div class="edu-school">NIIT (National Institute of Information Technology)</div>
+        <p class="edu-note">Rigorous curriculum in software principles, algorithms, full-stack database architectures, and distributed systems.</p>
+      </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- Experience -->
+      <section class="sec">
+        <div class="sec-head">
+          <div class="sec-title">Professional Experience</div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <div>
+              <div class="t-role">Lead Full-Stack Engineer &amp; AI Solutions Architect</div>
+              <div class="t-co">M-CEL TECH · Port Harcourt, Nigeria</div>
+            </div>
+            <span class="t-badge">2023 – Present</span>
+          </div>
+          <ul class="t-bullets">
+            <li>Spearheaded architecture, design systems, and deployments of high-impact web portals, client enterprise ecosystems, and automated digital workflows serving multi-tier corporate users.</li>
+            <li>Engineered enterprise AI customer triage and lead qualification workflows using LLM function calling and RAG knowledge-retrieval, reducing client support resolution time by <strong>60%</strong>.</li>
+            <li>Designed robust PostgreSQL and Supabase schemas with optimized compound indexing and caching, cutting critical database query response times by <strong>42%</strong> during heavy traffic spikes.</li>
+            <li>Led cross-functional sprint planning, instituted clean code review standards, and automated deployment pipelines via GitHub Actions and Vercel.</li>
+          </ul>
+          <div class="t-tags">
+            <span>React</span><span>TypeScript</span><span>Node.js</span><span>Supabase</span><span>AI Tool-Calling</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <div>
+              <div class="t-role">Full-Stack Software Consultant &amp; System Architect</div>
+              <div class="t-co">Independent Software Consultancy</div>
+            </div>
+            <span class="t-badge">2021 – 2023</span>
+          </div>
+          <ul class="t-bullets">
+            <li>Architected <strong>Vaultify</strong>, a digital fintech suite with encrypted user authentication, multi-currency transaction ledgers, and dynamic financial charts.</li>
+            <li>Built <strong>VOLT Energy</strong>, an industrial solar clean-tech portal featuring an interactive PV capacity calculator, quote builder, and commercial proposal engine.</li>
+            <li>Engineered <strong>GreenHarvest Agro</strong>, an e-commerce platform for agricultural distribution with real-time stock sync, cart state persistence, and WhatsApp ordering automation.</li>
+            <li>Delivered bespoke AI integrations including semantic document search, dynamic prompt engineering chains, and generative customer interaction bots.</li>
+          </ul>
+          <div class="t-tags">
+            <span>Next.js</span><span>React</span><span>Python</span><span>REST APIs</span><span>FastAPI</span><span>PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <div>
+              <div class="t-role">Software Engineering Instructor &amp; Technical Mentor</div>
+              <div class="t-co">M-CEL Tech Academy · Port Harcourt, Nigeria</div>
+            </div>
+            <span class="t-badge">2023 – Present</span>
+          </div>
+          <ul class="t-bullets">
+            <li>Authored practical hands-on curricula on modern JavaScript (ES6+), React state architectures, backend RESTful design, and AI-assisted engineering workflows.</li>
+            <li>Mentored 100+ aspiring software engineers from fundamentals to deploying full-stack capstone projects into production.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="sec">
+        <div class="sec-head">
+          <div class="sec-title">Commercial Production Deployments</div>
+        </div>
+
+        <div class="proj-grid">
+          <div class="proj-card">
+            <div class="proj-top">
+              <div class="proj-name">Vaultify Fintech Suite</div>
+              <a href="https://vaultify-rho.vercel.app/" target="_blank" rel="noreferrer" class="proj-link">Live Demo ↗</a>
+            </div>
+            <p class="proj-desc">Multi-asset digital banking dashboard with wallet analytics, transaction monitoring, and secure user flows.</p>
+            <span class="proj-stack">React · Tailwind CSS · RESTful APIs</span>
+          </div>
+
+          <div class="proj-card">
+            <div class="proj-top">
+              <div class="proj-name">M-CEL TECH Enterprise</div>
+              <a href="https://mceltech.com/" target="_blank" rel="noreferrer" class="proj-link">Live Site ↗</a>
+            </div>
+            <p class="proj-desc">Flagship tech platform with client management systems, consultation booking, and modern branding.</p>
+            <span class="proj-stack">React · TypeScript · Modern CSS · Node</span>
+          </div>
+
+          <div class="proj-card">
+            <div class="proj-top">
+              <div class="proj-name">VOLT Energy Clean-Tech</div>
+              <a href="https://voltenergy-nine.vercel.app/" target="_blank" rel="noreferrer" class="proj-link">Live Site ↗</a>
+            </div>
+            <p class="proj-desc">Commercial renewable energy portal with interactive solar capacity calculators and automated proposal workflows.</p>
+            <span class="proj-stack">React · Interactive Calculators · Tailwind</span>
+          </div>
+
+          <div class="proj-card">
+            <div class="proj-top">
+              <div class="proj-name">GreenHarvest Agro</div>
+              <a href="https://greenharvest-agro.vercel.app/" target="_blank" rel="noreferrer" class="proj-link">Live Site ↗</a>
+            </div>
+            <p class="proj-desc">Agricultural B2B e-commerce platform with automated catalog updates and instant WhatsApp order routing.</p>
+            <span class="proj-stack">React · Cart Architecture · WhatsApp API</span>
+          </div>
+        </div>
+
+        <div class="p-banner">
+          <div class="p-banner-left">
+            <span style="font-size:20px">🌐</span>
+            <div>
+              <span class="p-banner-title">Explore Full General Portfolio</span>
+              <p class="p-banner-desc">12 live production applications, AI agent tools, and interactive web platforms.</p>
+            </div>
+          </div>
+          <a href="https://nationchiburoma.dev" target="_blank" rel="noreferrer" class="p-banner-btn">
+            View All Works ↗
+          </a>
+        </div>
+      </section>
+
+    </main>
   </div>
 
-  <!-- ── Paper ── -->
-  <div class="paper">
+  <div class="footer">
+    NATION CHIBUROMA AMADI &nbsp;·&nbsp; chiburomanation6@gmail.com &nbsp;·&nbsp; +234 816 123 7136 &nbsp;·&nbsp; Port Harcourt, Nigeria &nbsp;·&nbsp; Remote Worldwide
+  </div>
 
-    <!-- Header -->
-    <header class="resume-header">
-      <div class="resume-header__top">
-        <div>
-          <div class="status-badge">
-            <span class="pulse-dot"></span>
-            AVAILABLE FOR SENIOR &amp; LEAD OPPORTUNITIES
-          </div>
-          <h1 class="name">NATION CHIBUROMA AMADI</h1>
-          <p class="role-title">Senior Full-Stack Software Engineer &amp; AI Systems Architect</p>
-        </div>
-        <div class="quick-stats">
-          <div class="stat-pill">
-            <span class="stat-val">4+</span>
-            <span class="stat-lbl">Years Exp.</span>
-          </div>
-          <div class="stat-pill">
-            <span class="stat-val">15+</span>
-            <span class="stat-lbl">Deployed Apps</span>
-          </div>
-          <div class="stat-pill">
-            <span class="stat-val">99.9%</span>
-            <span class="stat-lbl">Prod Uptime</span>
-          </div>
-        </div>
-      </div>
-
-      <p class="summary">
-        High-impact Software Engineer and Technical Lead with 4+ years of production experience architecting mission-critical web applications, enterprise platforms, and production-grade AI agent pipelines. Deeply versed in modern full-stack architectures (React, Next.js, Node.js, Python, TypeScript) and autonomous LLM integrations. Proven track record of spearheading scalable commercial systems across fintech, energy, and e-commerce that serve thousands of users with resilient cloud infrastructures.
-      </p>
-
-      <div class="contact-bar">
-        <a href="https://nationchiburoma.dev" target="_blank" rel="noreferrer" class="contact-link contact-link--portfolio">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          General Portfolio (Live Showcase)
-        </a>
-        <a href="mailto:chiburomanation6@gmail.com" class="contact-link">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          chiburomanation6@gmail.com
-        </a>
-        <a href="tel:+2348161237136" class="contact-link">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.27 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.15 6.15l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          +234 816 123 7136 (Direct Call)
-        </a>
-        <a href="https://wa.me/2348116079309" target="_blank" rel="noreferrer" class="contact-link contact-link--wa">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.128.555 4.127 1.534 5.857L.057 23.98l6.253-1.64A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.371l-.359-.214-3.72.976.995-3.63-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
-          +234 811 607 9309 (WhatsApp)
-        </a>
-        <span class="contact-link">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="13" height="13"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Port Harcourt, Nigeria &bull; Remote Worldwide
-        </span>
-        <a href="https://github.com/NATION-eng" target="_blank" rel="noreferrer" class="contact-link">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          github.com/NATION-eng
-        </a>
-        <a href="https://www.linkedin.com/in/chiburoma-nation-752395312" target="_blank" rel="noreferrer" class="contact-link">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          linkedin.com/in/chiburoma-nation-752395312
-        </a>
-      </div>
-    </header>
-
-    <!-- Body Grid -->
-    <div class="resume-grid">
-
-      <!-- LEFT COLUMN -->
-      <aside class="col-side">
-
-        <!-- AI & Intelligent Systems -->
-        <div class="card card--ai-glow">
-          <div class="card__title-row">
-            <svg class="card__icon card__icon--ai" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-            <h2 class="card__title">AI &amp; Intelligent Systems</h2>
-          </div>
-          <div class="tag-cloud">
-            <span class="tag tag--highlight">LLM Integrations</span>
-            <span class="tag tag--highlight">RAG Pipelines</span>
-            <span class="tag tag--highlight">Autonomous Agents</span>
-            <span class="tag">OpenAI &amp; Anthropic APIs</span>
-            <span class="tag">LangChain &amp; LlamaIndex</span>
-            <span class="tag">Vector DBs (Chroma/Pinecone)</span>
-            <span class="tag">Structured Tool-Calling</span>
-            <span class="tag">Prompt Engineering</span>
-            <span class="tag">Workflow Automation</span>
-          </div>
-        </div>
-
-        <!-- Frontend Architecture -->
-        <div class="card">
-          <div class="card__title-row">
-            <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            <h2 class="card__title">Frontend Architecture</h2>
-          </div>
-          <div class="tag-cloud">
-            <span class="tag tag--accent">React.js</span>
-            <span class="tag tag--accent">Next.js</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">JavaScript (ES6+)</span>
-            <span class="tag">Tailwind CSS</span>
-            <span class="tag">Framer Motion</span>
-            <span class="tag">Redux Toolkit / Zustand</span>
-            <span class="tag">Mobile-First UI / PWA</span>
-          </div>
-        </div>
-
-        <!-- Backend & Cloud -->
-        <div class="card">
-          <div class="card__title-row">
-            <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-            <h2 class="card__title">Backend &amp; Cloud Systems</h2>
-          </div>
-          <div class="tag-cloud">
-            <span class="tag">Node.js</span>
-            <span class="tag">Express.js</span>
-            <span class="tag">Python (FastAPI, Flask)</span>
-            <span class="tag">RESTful APIs</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Supabase &amp; Firebase</span>
-            <span class="tag">MongoDB &amp; Redis</span>
-            <span class="tag">Docker &amp; CI/CD</span>
-          </div>
-        </div>
-
-        <!-- Education -->
-        <div class="card">
-          <div class="card__title-row">
-            <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <h2 class="card__title">Education &amp; Credentials</h2>
-          </div>
-          <div class="edu-block__header">
-            <h3 class="edu-block__degree">Diploma in Software Engineering</h3>
-            <span class="badge-green">Certified</span>
-          </div>
-          <p class="edu-block__school">NIIT (National Institute of Information Technology)</p>
-          <p class="edu-block__note">Rigorous curriculum in software principles, algorithms, full-stack database architectures, and distributed systems.</p>
-        </div>
-
-      </aside>
-
-      <!-- RIGHT COLUMN -->
-      <main class="col-main">
-
-        <!-- Professional Experience -->
-        <section class="section">
-          <div class="section__header">
-            <h2 class="section__title">Professional Experience</h2>
-            <span class="section__line"></span>
-          </div>
-
-          <!-- Role 1 -->
-          <article class="timeline-item">
-            <div class="timeline-bullet"></div>
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Lead Full-Stack Engineer &amp; AI Solutions Architect</h3>
-                <p class="timeline-company">M-CEL TECH &bull; Port Harcourt, Nigeria</p>
-              </div>
-              <span class="timeline-badge">2023 &ndash; Present</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Spearheaded architecture, design systems, and deployments of high-impact web portals, client enterprise ecosystems, and automated digital workflows serving multi-tier corporate users.</li>
-              <li>Engineered enterprise AI customer triage and lead qualification workflows using LLM function calling and RAG knowledge-retrieval, reducing client support resolution time by <strong>60%</strong>.</li>
-              <li>Designed robust PostgreSQL and Supabase schemas with optimized compound indexing and caching, cutting critical database query response times by <strong>42%</strong> during heavy traffic spikes.</li>
-              <li>Led cross-functional sprint planning, instituted clean code review standards, and automated deployment pipelines via GitHub Actions and Vercel.</li>
-            </ul>
-            <div class="role-tags">
-              <span>React</span><span>TypeScript</span><span>Node.js</span><span>Supabase</span><span>AI Tool-Calling</span><span>Tailwind CSS</span>
-            </div>
-          </article>
-
-          <!-- Role 2 -->
-          <article class="timeline-item">
-            <div class="timeline-bullet"></div>
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Full-Stack Software Consultant &amp; System Architect</h3>
-                <p class="timeline-company">Independent Software Consultancy</p>
-              </div>
-              <span class="timeline-badge">2021 &ndash; 2023</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Architected <strong>Vaultify</strong>, a digital fintech suite with encrypted user authentication, multi-currency transaction ledgers, and dynamic financial charts.</li>
-              <li>Built <strong>VOLT Energy</strong>, an industrial solar clean-tech portal featuring an interactive PV capacity calculator, quote builder, and commercial proposal engine.</li>
-              <li>Engineered <strong>GreenHarvest Agro</strong>, an e-commerce platform for agricultural distribution with real-time stock sync, cart state persistence, and WhatsApp ordering automation.</li>
-              <li>Delivered bespoke AI integrations including semantic doc search, dynamic prompt engineering chains, and generative customer interaction bots.</li>
-            </ul>
-            <div class="role-tags">
-              <span>Next.js</span><span>React</span><span>Python</span><span>REST APIs</span><span>FastAPI</span><span>PostgreSQL</span>
-            </div>
-          </article>
-
-          <!-- Role 3 -->
-          <article class="timeline-item">
-            <div class="timeline-bullet"></div>
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Software Engineering Instructor &amp; Technical Mentor</h3>
-                <p class="timeline-company">M-CEL Tech Academy &bull; Port Harcourt, Nigeria</p>
-              </div>
-              <span class="timeline-badge">2023 &ndash; Present</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Authored practical hands-on curricula on modern JavaScript (ES6+), React state architectures, backend RESTful design, and AI-assisted engineering workflows.</li>
-              <li>Mentored 100+ aspiring software engineers from fundamentals to deploying full-stack capstone projects into production.</li>
-            </ul>
-          </article>
-        </section>
-
-        <!-- Commercial Production Deployments -->
-        <section class="section">
-          <div class="section__header">
-            <h2 class="section__title">Commercial Production Deployments</h2>
-            <span class="section__line"></span>
-          </div>
-
-          <div class="projects-grid">
-            <div class="proj-card">
-              <div class="proj-card__top">
-                <h4 class="proj-card__name">Vaultify Fintech Suite</h4>
-                <a href="https://vaultify-rho.vercel.app/" target="_blank" rel="noreferrer" class="proj-card__link">
-                  Live Demo
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </div>
-              <p class="proj-card__desc">Multi-asset digital banking and asset portfolio dashboard with wallet analytics, transaction monitoring, and secure user flows.</p>
-              <span class="proj-card__stack">React &bull; Tailwind CSS &bull; RESTful APIs</span>
-            </div>
-
-            <div class="proj-card">
-              <div class="proj-card__top">
-                <h4 class="proj-card__name">M-CEL TECH Enterprise</h4>
-                <a href="https://mceltech.com/" target="_blank" rel="noreferrer" class="proj-card__link">
-                  Live Site
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </div>
-              <p class="proj-card__desc">Flagship digital tech platform with client management systems, interactive consultation booking, and modern branding aesthetics.</p>
-              <span class="proj-card__stack">React &bull; TypeScript &bull; Modern CSS &bull; Node</span>
-            </div>
-
-            <div class="proj-card">
-              <div class="proj-card__top">
-                <h4 class="proj-card__name">VOLT Energy Clean-Tech</h4>
-                <a href="https://voltenergy-nine.vercel.app/" target="_blank" rel="noreferrer" class="proj-card__link">
-                  Live Site
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </div>
-              <p class="proj-card__desc">Commercial renewable energy portal with interactive solar kilowatt-capacity estimation calculators and automated proposal workflows.</p>
-              <span class="proj-card__stack">React &bull; Interactive Calculators &bull; Tailwind</span>
-            </div>
-
-            <div class="proj-card">
-              <div class="proj-card__top">
-                <h4 class="proj-card__name">GreenHarvest Agro</h4>
-                <a href="https://greenharvest-agro.vercel.app/" target="_blank" rel="noreferrer" class="proj-card__link">
-                  Live Site
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </div>
-              <p class="proj-card__desc">Agricultural supply chain and direct B2B e-commerce platform with automated catalog updates and instant WhatsApp order routing.</p>
-              <span class="proj-card__stack">React &bull; Cart Architecture &bull; WhatsApp API</span>
-            </div>
-          </div>
-
-          <!-- Portfolio Banner -->
-          <div class="portfolio-banner">
-            <div class="portfolio-banner__content">
-              <svg class="portfolio-banner__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              <div>
-                <span class="portfolio-banner__title">Explore Full General Portfolio</span>
-                <p class="portfolio-banner__desc">Browse all 12 live production applications, AI agent tools, and interactive web platforms.</p>
-              </div>
-            </div>
-            <a href="https://nationchiburoma.dev" target="_blank" rel="noreferrer" class="portfolio-banner__btn">
-              View All Works
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </section>
-
-      </main>
-    </div><!-- /resume-grid -->
-
-    <footer class="resume-footer">
-      NATION CHIBUROMA AMADI &bull; chiburomanation6@gmail.com &bull; +234 816 123 7136 &bull; Port Harcourt, Nigeria &bull; Remote Worldwide
-    </footer>
-
-  </div><!-- /paper -->
-
+</div><!-- /paper -->
 </body>
 </html>
