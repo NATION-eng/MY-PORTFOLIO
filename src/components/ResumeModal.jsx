@@ -141,7 +141,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
                 </div>
                 <h1 className="resume-header__name">NATION CHIBUROMA AMADI</h1>
                 <p className="resume-header__role">
-                  Senior Full-Stack Software Engineer &amp; AI Systems Architect
+                  Senior Software Engineer &bull; Full-Stack Developer &bull; AI Architect &bull; AI Integration Specialist
                 </p>
               </div>
 

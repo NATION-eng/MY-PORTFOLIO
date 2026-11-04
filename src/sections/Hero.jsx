@@ -13,12 +13,13 @@ const Hero = ({ onOpenResume }) => {
           <h1 className="hero__title">
             Software Engineer &amp; <br className="hero__br" />
             <span className="hero__title-accent">Full-Stack Developer</span>
+            <span className="hero__title-subline">AI Architect &bull; AI Integration Specialist</span>
           </h1>
         </AnimateOnScroll>
 
         <AnimateOnScroll variant="fade" delay={0.5}>
           <p className="hero__subtitle">
-            Building scalable web applications, fluid user interfaces, and resilient production architectures that users love and businesses trust.
+            Architecting intelligent AI agent pipelines, production-grade autonomous integrations, and resilient full-stack web applications that users love and businesses trust.
           </p>
         </AnimateOnScroll>
 

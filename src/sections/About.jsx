@@ -37,15 +37,16 @@ const About = () => {
 
         <AnimateOnScroll variant="fade" delay={0.3} className="about__content">
           <p>
-            I'm a passionate Web Developer from Rivers State, Nigeria. Born
+            I'm a passionate Software Engineer, Full-Stack Developer, AI Architect,
+            and AI Integration Specialist from Rivers State, Nigeria. Born
             in Port Harcourt, I developed an early fascination with technology
-            — how devices worked, what made them tick. That curiosity evolved
-            into a career in software engineering.
+            — how systems interact, what makes them tick. That curiosity evolved
+            into architecting distributed web platforms and intelligent autonomous AI pipelines.
           </p>
           <p>
-            Programming became my gateway to turning ideas into reality. I
-            specialize in crafting performant, visually compelling web
-            applications that users genuinely enjoy using.
+            I specialize in turning ambitious ideas into reality — engineering
+            production-grade applications with modern full-stack architectures (React, Next.js, Node.js, Python)
+            and integrating cutting-edge LLMs, autonomous agents, and RAG workflows.
           </p>
           <p>
             Creativity has always been my escape — first through drawing, now

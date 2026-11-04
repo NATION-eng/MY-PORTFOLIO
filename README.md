@@ -1,4 +1,4 @@
-# Nation Chiburoma — Software Engineer & Full-Stack Developer
+# Nation Chiburoma Amadi — Software Engineer, Full-Stack Developer, AI Architect & AI Integration Specialist
 
 [![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -6,7 +6,7 @@
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.x-black?logo=framer&logoColor=white)](https://www.framer.com/motion/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> Production portfolio showcasing 15+ deployed web applications across Enterprise IT, Fintech, AgriTech, EdTech, and High-Performance Product Landings.
+> Production portfolio showcasing deployed web applications, intelligent AI agent workflows, and resilient enterprise cloud platforms. Specializing in Software Engineering, Full-Stack Architecture, AI Solutions Design, and Autonomous LLM Integrations.
 
 ---
 
