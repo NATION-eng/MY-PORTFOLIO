@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  FiX, FiPrinter, FiMail, FiPhone, FiMapPin, FiGithub, 
+  FiX, FiMail, FiPhone, FiMapPin, FiGithub, 
   FiLinkedin, FiExternalLink, FiCpu, FiCode, FiServer, 
   FiDatabase, FiAward, FiCheckCircle, FiSun, FiMoon, FiGlobe 
 } from 'react-icons/fi';
@@ -32,13 +32,6 @@ const ResumeModal = ({ isOpen, onClose }) => {
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
-
-  const handlePrint = () => {
-    // Run outside the click event task so the native print dialog never blocks the event handler
-    setTimeout(() => {
-      window.print();
-    }, 150);
-  };
 
   return (
     <AnimatePresence>
@@ -97,17 +90,6 @@ const ResumeModal = ({ isOpen, onClose }) => {
               <FiGlobe />
               <span>General Portfolio</span>
             </a>
-
-            {/* Print / Save to PDF */}
-            <button 
-              type="button"
-              className="resume-toolbar__btn resume-toolbar__btn--primary" 
-              onClick={handlePrint} 
-              title="Print or Save as Official PDF"
-            >
-              <FiPrinter />
-              <span>Print / PDF</span>
-            </button>
 
             {/* Close */}
             <button 
