@@ -80,8 +80,7 @@ export const projects = [
     title: "Solar Estimator",
     description:
       "Interactive calculation engine helping homeowners and businesses estimate rooftop solar capacity, energy output, and installation cost models.",
-    image1: "/Images/solar 1.jpeg",
-    image2: "/Images/solar 2.jpeg",
+    image1: "/Images/solar_estimator_real.png",
     url: "https://solar-estimator-dqw.vercel.app/",
     tags: ["TypeScript", "JavaScript", "Clean Energy"],
   },
@@ -98,8 +97,7 @@ export const projects = [
     title: "Cad Cutz",
     description:
       "A modern business website for a grooming brand, designed to showcase services and give visitors a clean, confident first impression.",
-    image1: "/Images/B1.jpeg",
-    image2: "/Images/B2.jpeg",
+    image1: "/Images/cad_cutz_real.png",
     url: "https://cad-cutz-ice.vercel.app/",
     tags: ["JavaScript", "CSS", "Lifestyle"],
   },
