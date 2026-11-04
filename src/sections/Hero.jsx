@@ -68,8 +68,8 @@ const Hero = ({ onOpenResume }) => {
             </div>
             <div className="hero__metric-divider" />
             <div className="hero__metric-item">
-              <span className="hero__metric-number">Next.js &amp; TS</span>
-              <span className="hero__metric-label">Core Stack</span>
+              <span className="hero__metric-number">Full-Stack &amp; AI</span>
+              <span className="hero__metric-label">Architecture</span>
             </div>
           </div>
         </AnimateOnScroll>
