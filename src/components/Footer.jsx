@@ -13,7 +13,7 @@ const Footer = () => {
         </a>
 
         <p className="footer__copy">
-          &copy; {year} Nation Chiburoma Amadi. Built with React.
+          &copy; {year} Nation Chiburoma Amadi. All rights reserved.
         </p>
 
         <div className="footer__socials">
