@@ -31,14 +31,14 @@
 
 | Project | Category | Live URL | Technologies |
 | :--- | :--- | :--- | :--- |
+| **ASF RSU 45th Jubilee** | Alumni & Jubilee Event Platform | [asfrsualumni.org](https://www.asfrsualumni.org/) | React, TypeScript, Tailwind CSS, Vite |
+| **Masterview Consults** | Engineering & Heavy Haulage Logistics | [masterviewcel.vercel.app](https://masterviewcel.vercel.app/) | Next.js, React, TypeScript, Tailwind CSS |
+| **Connected in Praise** | Mega Praise Concert & Evangelism | [connectedinpraise.vercel.app](https://connectedinpraise.vercel.app/) | React, Tailwind CSS, Event Platform, Vite |
 | **M-CEL TECH** | Enterprise IT & Cloud Platform | [mceltech.com](https://mceltech.com/) | Next.js, React, TypeScript, Tailwind CSS |
-| **Vaultify** | Fintech Wealth Management Platform | [vaultify-rho.vercel.app](https://vaultify-rho.vercel.app/) | React, Tailwind CSS, Fintech UI, Vite |
 | **M-CEL Tech Academy** | EdTech & Talent Certification (PWA) | [m-cel-tech-academy.vercel.app](https://m-cel-tech-academy.vercel.app/) | React, PWA, Tailwind CSS, Vite |
 | **VOLT Energy** | High-Octane Product Landing Experience | [voltenergy-nine.vercel.app](https://voltenergy-nine.vercel.app/) | React, Framer Motion, Tailwind CSS |
 | **GreenHarvest Agro** | Sustainable AgriTech Supply Chain | [greenharvest-agro.vercel.app](https://greenharvest-agro.vercel.app/) | React, Tailwind CSS, Vite |
 | **ApexBuild Engineering** | Structural & Civil Infrastructure Portal | [apexbuild-engineerin-ubwg.bolt.host](https://apexbuild-engineerin-ubwg.bolt.host) | React, TypeScript, Tailwind CSS |
-| **Savor & Spice Bistro** | Contemporary Fine-Casual Dining | [savor-and-spice-bist-xga0.bolt.host](https://savor-and-spice-bist-xga0.bolt.host/) | React, Tailwind CSS, Vite |
-| **Connected in Praise 2026** | Annual Ministry & Concert Platform | [connected-in-praise-mipz.bolt.host](https://connected-in-praise-mipz.bolt.host/) | React, Tailwind CSS, Event Platform |
 
 ---
 

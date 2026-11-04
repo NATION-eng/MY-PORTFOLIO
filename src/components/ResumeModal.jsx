@@ -335,7 +335,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
                   </div>
                   <ul className="resume-timeline-bullets">
                     <li>
-                      Architected <strong>Vaultify</strong>, a digital fintech suite with encrypted user authentication, multi-currency transaction ledgers, and dynamic financial charts.
+                      Architected <strong>Masterview Consults</strong>, a high-impact corporate engineering &amp; heavy logistics platform with interactive client service drawers and multi-tier procurement workflows.
                     </li>
                     <li>
                       Built <strong>VOLT Energy</strong>, an industrial solar clean-tech portal featuring an interactive PV capacity calculator, quote builder, and commercial proposal engine.
@@ -388,15 +388,15 @@ const ResumeModal = ({ isOpen, onClose }) => {
                 <div className="resume-projects-grid">
                   <div className="resume-project-card">
                     <div className="resume-project-card__top">
-                      <h4 className="resume-project-card__name">Vaultify Fintech Suite</h4>
-                      <a href="https://vaultify-rho.vercel.app/" target="_blank" rel="noreferrer" className="resume-project-card__link">
-                        Live Demo <FiExternalLink />
+                      <h4 className="resume-project-card__name">Masterview Consults</h4>
+                      <a href="https://masterviewcel.vercel.app/" target="_blank" rel="noreferrer" className="resume-project-card__link">
+                        Live Site <FiExternalLink />
                       </a>
                     </div>
                     <p className="resume-project-card__desc">
-                      Multi-asset digital banking and asset portfolio dashboard with wallet analytics, transaction monitoring, and secure user flows.
+                      Heavy engineering, structural construction, technical procurement, and nationwide haulage logistics portal with certified standards.
                     </p>
-                    <span className="resume-project-card__stack">React &bull; Tailwind CSS &bull; RESTful APIs</span>
+                    <span className="resume-project-card__stack">Next.js &bull; TypeScript &bull; Tailwind CSS &bull; React</span>
                   </div>
 
                   <div className="resume-project-card">

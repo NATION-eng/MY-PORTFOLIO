@@ -5,12 +5,36 @@
 //   title       - Project name
 //   description - 1-2 sentence description
 //   image1      - Primary screenshot path (from /public/Images/)
-//   image2      - Secondary screenshot path
+//   image2      - Secondary screenshot path (optional)
 //   url         - Live site URL
 //   tags        - Array of tech used
 // ============================================================
 
 export const projects = [
+  {
+    title: "ASF RSU 45th Jubilee",
+    description:
+      "Official 45th Anniversary & Alumni Homecoming portal for Adventist Students' Fellowship (Rivers State University) featuring accommodation guides, program timelines, digital DP generator, and RSVP pipelines.",
+    image1: "/Images/asfrsualumni_real.png",
+    url: "https://www.asfrsualumni.org/",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Alumni Portal", "Vite"],
+  },
+  {
+    title: "Masterview Consults",
+    description:
+      "High-scale corporate engineering and technical logistics platform for certified multidisciplinary construction, electrical/mechanical installations, steel fabrication, and nationwide heavy haulage.",
+    image1: "/Images/masterviewcel_real.png",
+    url: "https://masterviewcel.vercel.app/",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Industrial Eng"],
+  },
+  {
+    title: "Connected in Praise",
+    description:
+      "City-wide mega musical and gospel evangelism experience portal by Jerusalem Choir and Adventist Possibility Ministries, featuring live stream coordination, schedule matrix, and donation workflows.",
+    image1: "/Images/connectedinpraise_real.png",
+    url: "https://connectedinpraise.vercel.app/",
+    tags: ["React", "Tailwind CSS", "Event Platform", "Framer Motion", "Vite"],
+  },
   {
     title: "M-CEL TECH",
     description:
@@ -18,14 +42,6 @@ export const projects = [
     image1: "/Images/mceltech_real.png",
     url: "https://mceltech.com/",
     tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Enterprise IT"],
-  },
-  {
-    title: "Vaultify",
-    description:
-      "An all-in-one digital wealth and savings engine allowing users to automate recurring deposits, lock funds for milestones, and invest in vetted portfolios with up to 16% p.a.",
-    image1: "/Images/vaultify_real.png",
-    url: "https://vaultify-rho.vercel.app/",
-    tags: ["React", "Tailwind CSS", "Fintech UI", "Vite", "JavaScript"],
   },
   {
     title: "M-CEL Tech Academy",
@@ -61,22 +77,6 @@ export const projects = [
     tags: ["React", "TypeScript", "Tailwind CSS", "Civil Engineering"],
   },
   {
-    title: "Savor & Spice Bistro",
-    description:
-      "Contemporary dining portal blending African culinary heritage with fine-casual presentation, real-time table reservations, craft mixology, and dynamic digital menus.",
-    image1: "/Images/savor_real.png",
-    url: "https://savor-and-spice-bist-xga0.bolt.host/",
-    tags: ["React", "Tailwind CSS", "Vite", "Hospitality Tech"],
-  },
-  {
-    title: "Connected in Praise 2026",
-    description:
-      "Multi-day annual praise concert and evangelism event portal featuring schedule coordination, guest choir spotlights, and attendee registration pipelines.",
-    image1: "/Images/connected_real.png",
-    url: "https://connected-in-praise-mipz.bolt.host/",
-    tags: ["React", "Tailwind CSS", "Event Platform", "Vite"],
-  },
-  {
     title: "Solar Estimator",
     description:
       "Interactive calculation engine helping homeowners and businesses estimate rooftop solar capacity, energy output, and installation cost models.",
@@ -93,15 +93,6 @@ export const projects = [
     image2: "/Images/site 2.jpeg",
     url: "https://site-pilot-phi.vercel.app/",
     tags: ["JavaScript", "CSS", "AI Tooling"],
-  },
-  {
-    title: "Tourist Guide",
-    description:
-      "A tourism website that helps users explore destinations and discover travel experiences through a clean, engaging interface.",
-    image1: "/Images/p1.jpeg",
-    image2: "/Images/p2.jpeg",
-    url: "https://tourist-guide-zeta-five.vercel.app/",
-    tags: ["JavaScript", "CSS", "Tourism"],
   },
   {
     title: "Cad Cutz",
