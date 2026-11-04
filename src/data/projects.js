@@ -87,11 +87,10 @@ export const projects = [
   {
     title: "Site Pilot",
     description:
-      "An AI-powered construction support tool focused on making planning and project assistance more accessible.",
-    image1: "/Images/site 1.jpeg",
-    image2: "/Images/site 2.jpeg",
+      "AI-powered construction cost estimation and project intelligence platform helping developers calculate material schedules, forecast expenditures, and mitigate build risks.",
+    image1: "/Images/sitepilot_real.png",
     url: "https://site-pilot-phi.vercel.app/",
-    tags: ["JavaScript", "CSS", "AI Tooling"],
+    tags: ["JavaScript", "ConTech AI", "Cost Estimation"],
   },
   {
     title: "Cad Cutz",
