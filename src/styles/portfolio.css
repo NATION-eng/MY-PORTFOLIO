@@ -2550,37 +2550,113 @@
    RESPONSIVE ADJUSTMENTS (TABLETS & PHONES)
    ============================================================ */
 @media (max-width: 860px) {
-  .resume-grid {
-    grid-template-columns: 1fr;
+  .resume-backdrop {
+    padding: 12px 10px 40px;
   }
 
   .resume-paper {
-    padding: 28px 20px;
-    margin-bottom: 70px;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px 16px !important;
+    margin-bottom: 50px;
+    border-radius: 14px;
+    box-sizing: border-box;
   }
 
-  .resume-paper--executive .resume-header__name {
-    font-size: 24px;
+  .resume-paper--executive,
+  .resume-paper--ats {
+    padding: 24px 16px !important;
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    width: 100%;
+  }
+
+  .resume-col-side,
+  .resume-col-main {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .resume-header__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .resume-paper--executive .resume-header__name,
+  .resume-paper--ats .resume-header__name {
+    font-size: clamp(22px, 6vw, 28px);
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .resume-paper--executive .resume-header__role,
+  .resume-paper--ats .resume-header__role {
+    font-size: 14px;
+    line-height: 1.45;
+    margin-top: 6px;
+    word-break: break-word;
   }
 
   .resume-header__quick-stats {
     width: 100%;
+    display: flex;
     justify-content: space-between;
+    gap: 8px;
   }
 
   .resume-stat-pill {
     flex: 1;
-    padding: 6px 8px;
+    min-width: 0;
+    padding: 6px 4px;
+    border-radius: 10px;
+  }
+
+  .resume-stat-val {
+    font-size: 15px;
+  }
+
+  .resume-stat-lbl {
+    font-size: 9px;
+  }
+
+  .resume-contact-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-top: 12px;
+  }
+
+  .resume-contact-link {
+    font-size: 12px;
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  .resume-timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .resume-timeline-badge {
+    align-self: flex-start;
   }
 
   .resume-projects-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .resume-toolbar {
-    flex-wrap: wrap;
-    gap: 10px;
+    top: 8px;
     padding: 8px 12px;
+    border-radius: 12px;
+    margin-bottom: 14px;
   }
 
   .resume-toolbar__badge {
@@ -2589,27 +2665,101 @@
 
   .resume-toolbar__actions {
     width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 8px;
+  }
+
+  .resume-toolbar__toggle-group {
+    flex-shrink: 0;
+  }
+
+  .resume-toolbar__toggle-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+    gap: 4px;
+  }
+
+  .resume-toolbar__btn--portfolio {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .resume-toolbar__btn--close {
+    padding: 6px 8px;
+    font-size: 14px;
   }
 
   .resume-portfolio-banner {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    padding: 14px;
+  }
+
+  .resume-portfolio-banner__content {
+    gap: 10px;
   }
 
   .resume-portfolio-banner__btn {
     width: 100%;
     justify-content: center;
+    padding: 10px 14px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+  .resume-backdrop {
+    padding: 8px 6px 36px;
+  }
+
+  .resume-paper {
+    padding: 18px 12px !important;
+  }
+
+  .resume-paper--executive,
+  .resume-paper--ats {
+    padding: 18px 12px !important;
+  }
+
   .resume-toolbar__btn--portfolio span {
     display: none;
   }
+
   .resume-toolbar__btn--portfolio {
-    padding: 8px 10px;
+    padding: 7px 9px;
+  }
+
+  .resume-toolbar__toggle-btn span {
+    display: inline;
+  }
+
+  .resume-toolbar__toggle-btn {
+    padding: 5px 8px;
+    font-size: 10.5px;
+  }
+
+  .resume-card {
+    padding: 14px 12px !important;
+  }
+
+  .resume-timeline-item {
+    padding-left: 16px;
+  }
+
+  .resume-timeline-bullets {
+    padding-left: 14px;
+    font-size: 12.5px;
+  }
+
+  .resume-role-tags span {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  .resume-project-card {
+    padding: 10px 12px !important;
   }
 }
 
